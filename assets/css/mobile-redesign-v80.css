@@ -1,0 +1,539 @@
+/* ======================================================================
+   MOBILE REDESIGN — v80 · 08 Aug 2026
+   Dedicated mobile composition for Imran Chowdhury's academic portfolio.
+   Desktop/tablet design and all existing JavaScript logic remain untouched.
+   ====================================================================== */
+
+@media (max-width: 820px){
+  /* ---------- shared mobile foundation ---------- */
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  body{margin:0;font-size:15px;line-height:1.58}
+  main{width:100%;max-width:100%;overflow-x:clip}
+  *,*::before,*::after{box-sizing:border-box}
+  img,svg,video,canvas,iframe{max-width:100%}
+  img,video{height:auto}
+  iframe{width:100%}
+  section,article,aside,figure,header,footer,nav,div{min-width:0}
+  pre{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  code{overflow-wrap:anywhere}
+  table{border-collapse:collapse}
+
+  .container,
+  .home-atlas-page .container,
+  .tc-shell,
+  .credential-shell,
+  .automation-shell,
+  .education-simple-shell,
+  .uav-field-page .container,
+  .urban-planning-page .container{
+    width:calc(100% - 28px)!important;
+    max-width:none!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+
+  /* ---------- navigation ---------- */
+  .site-header{z-index:3000!important}
+  .nav-wrap{width:calc(100% - 20px)!important;height:64px!important;gap:7px!important}
+  .brand-text-only{flex:1 1 auto!important;min-width:0!important;margin-right:auto!important}
+  .brand-text-only strong{display:block!important;max-width:100%!important;font-size:1rem!important;line-height:1.1!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  .menu,.theme{flex:0 0 36px!important;width:36px!important;height:36px!important;min-width:36px!important;border-radius:4px!important}
+  .site-header nav{top:64px!important;left:10px!important;right:10px!important;max-height:calc(100dvh - 76px)!important;padding:8px!important;border-radius:10px!important;overflow-y:auto!important;overscroll-behavior:contain!important;-webkit-overflow-scrolling:touch!important}
+  .site-header nav a{padding:10px 11px!important;font-size:.82rem!important;line-height:1.35!important}
+
+  /* ---------- common editorial rhythm ---------- */
+  .page-hero,.content,.section{max-width:100%}
+  .page-hero{padding:34px 0 26px!important}
+  .content{padding:34px 0 48px!important}
+  .section{padding:42px 0!important}
+  .section-head{display:block!important;margin-bottom:22px!important}
+  .section-head h2,.content h2{font-size:1.75rem!important;line-height:1.13!important}
+  .page-hero h1{font-size:2.35rem!important;line-height:1.02!important;letter-spacing:-.035em!important}
+  .hero-actions,.button-row,.portfolio-route-actions,.professor-quick-actions,.ha-actions{max-width:100%}
+  .button,.story-more,.automation-project-github,.auto-code-link,.auto-download-link{max-width:100%;white-space:normal!important;text-align:center}
+
+  /* Generic grids that must become a true mobile reading order. */
+  .hero-grid,.feature,.split,.grid-2,.grid-3,.grid-4,.project-grid,.gallery-grid,.contact-grid,
+  .detail-layout,.academic-hero-grid,.academic-paper-grid,.academic-record-grid,.academic-paper-layout,
+  .research-detail-layout,.research-section,.research-question-grid,.method-grid,.finding-grid,.finding-grid-compact,.contribution-grid,
+  .compact-contact-layout,.compact-home-layout,.compact-section-head,.home-columns,.home-feature-story,
+  .editor-grid,.media-hub,.writeup-grid,.media-gallery-grid,.video-grid,.credential-grid,
+  .section-menu-grid,.blog-grid,.profile-intro-simple{
+    grid-template-columns:1fr!important;
+  }
+
+  .sticky,.research-sidebar,.academic-research-sidebar{position:static!important}
+  .academic-table-wrap,.automation-evidence-table,.rs-evidence-table{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .academic-table-wrap table,.automation-evidence-table table,.rs-evidence-table table{min-width:620px}
+
+  /* ---------- HOME: dedicated mobile composition ---------- */
+  body.home-atlas-page .ha-hero{padding:14px 0 0!important}
+  body.home-atlas-page .ha-grid-overlay{opacity:.45}
+  body.home-atlas-page .ha-hero-grid{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:18px!important;
+    align-items:stretch!important;
+  }
+  body.home-atlas-page .ha-identity{order:1;padding:4px 0 2px!important;width:100%!important}
+  body.home-atlas-page .ha-map-stage{order:2;width:100%!important}
+  body.home-atlas-page .ha-eyebrow{display:block!important;width:100%!important;font-size:.58rem!important;line-height:1.4!important;letter-spacing:.11em!important;overflow-wrap:normal!important;word-break:normal!important}
+  body.home-atlas-page .ha-name-row{grid-template-columns:54px minmax(0,1fr)!important;gap:11px!important;margin:10px 0 13px!important}
+  body.home-atlas-page .ha-name-row img{width:54px!important;height:54px!important;border-width:2px!important}
+  body.home-atlas-page .ha-name-row h1{font-size:1.48rem!important;line-height:1.02!important;letter-spacing:-.025em!important}
+  body.home-atlas-page .ha-role{font-size:.68rem!important;line-height:1.35!important;margin-top:4px!important}
+  body.home-atlas-page .ha-identity h2{font-size:2.05rem!important;line-height:.99!important;letter-spacing:-.04em!important;margin:0!important}
+  body.home-atlas-page .ha-intro{font-size:.83rem!important;line-height:1.58!important;margin-top:11px!important}
+
+  /* Compact the profile logic into mobile cards, but keep all content. */
+  body.home-atlas-page .ha-home-profile{grid-template-columns:1fr!important;gap:9px!important;margin-top:13px!important}
+  body.home-atlas-page .ha-summary-card,
+  body.home-atlas-page .ha-work-card{padding:11px 12px!important}
+  body.home-atlas-page .ha-summary-card ul{grid-template-columns:1fr 1fr!important;gap:5px 10px!important}
+  body.home-atlas-page .ha-work-items{grid-template-columns:1fr!important;gap:7px!important}
+  body.home-atlas-page .ha-work-item{padding:8px 0!important}
+  body.home-atlas-page .ha-work-item+ .ha-work-item{border-left:0!important;border-top:1px solid var(--ha-line)!important}
+
+  body.home-atlas-page .ha-research-logic{grid-template-columns:1fr 1fr!important;gap:7px!important;margin-top:12px!important;padding:8px 0!important}
+  body.home-atlas-page .ha-research-logic i{display:none!important}
+  body.home-atlas-page .ha-research-logic>div{padding:7px 8px!important;background:rgba(255,253,248,.62)!important;border:1px solid var(--ha-line)!important}
+  body.home-atlas-page .ha-research-logic strong{font-size:.76rem!important}
+  body.home-atlas-page .ha-research-logic small{font-size:.55rem!important}
+  body.home-atlas-page .ha-hero-evidence{grid-template-columns:1fr!important;gap:8px!important}
+  body.home-atlas-page .ha-thesis-glimpse,
+  body.home-atlas-page .ha-cert-glimpse{grid-template-columns:82px minmax(0,1fr)!important;min-height:88px!important}
+  body.home-atlas-page .ha-thesis-glimpse img,
+  body.home-atlas-page .ha-cert-glimpse img{min-height:88px!important}
+
+  body.home-atlas-page .ha-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:7px!important;margin-top:11px!important}
+  body.home-atlas-page .ha-actions .ha-primary{grid-column:1/-1!important}
+  body.home-atlas-page .ha-actions a{width:100%!important;padding:9px 10px!important;font-size:.68rem!important}
+
+  /* Research Journey: on phones this is intentionally NOT a desktop overlay.
+     It becomes a clear mobile story module: title -> location rail -> map -> evidence -> control. */
+  body.home-atlas-page .ha-map-option6{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-template-areas:
+      "journey-title"
+      "journey-steps"
+      "journey-map"
+      "journey-panel"
+      "journey-play"!important;
+    gap:9px!important;
+    min-height:0!important;
+    height:auto!important;
+    padding:0!important;
+    overflow:visible!important;
+    border:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+  body.home-atlas-page .ha-map-option6 .ha-map{
+    grid-area:journey-map!important;
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    height:330px!important;
+    min-height:330px!important;
+    overflow:hidden!important;
+    border:1px solid var(--ha-line)!important;
+    box-shadow:0 10px 26px rgba(16,43,66,.08)!important;
+  }
+  body.home-atlas-page .ha-o6-header{
+    grid-area:journey-title!important;
+    position:static!important;
+    inset:auto!important;
+    width:100%!important;
+    padding:11px 12px!important;
+    border:1px solid var(--ha-line)!important;
+    border-left:3px solid var(--ha-gold)!important;
+    box-shadow:none!important;
+    background:rgba(255,253,248,.96)!important;
+  }
+  body.home-atlas-page .ha-o6-header strong{font-size:1.08rem!important;line-height:1.08!important}
+  body.home-atlas-page .ha-o6-header small{font-size:.58rem!important;line-height:1.38!important}
+  body.home-atlas-page .ha-o6-steps{
+    grid-area:journey-steps!important;
+    position:static!important;
+    inset:auto!important;
+    display:flex!important;
+    width:100%!important;
+    max-height:none!important;
+    gap:6px!important;
+    padding:0 0 3px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    scroll-snap-type:x proximity!important;
+    scrollbar-width:thin!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  body.home-atlas-page .ha-o6-steps button{
+    flex:0 0 auto!important;
+    grid-template-columns:24px auto!important;
+    gap:6px!important;
+    min-width:104px!important;
+    padding:6px 8px!important;
+    scroll-snap-align:start!important;
+    transform:none!important;
+    white-space:nowrap!important;
+    background:#fffdf8!important;
+    border:1px solid var(--ha-line)!important;
+  }
+  body.home-atlas-page .ha-o6-steps button:hover,
+  body.home-atlas-page .ha-o6-steps button.active{transform:none!important;background:var(--ha-navy)!important;color:#fff!important;border-color:var(--ha-navy)!important}
+  body.home-atlas-page .ha-o6-steps i{width:23px!important;height:23px!important;font-size:.52rem!important}
+  body.home-atlas-page .ha-o6-steps strong{font-size:.61rem!important}
+  body.home-atlas-page .ha-o6-steps small{display:none!important}
+  body.home-atlas-page .ha-o6-panel{
+    grid-area:journey-panel!important;
+    position:static!important;
+    inset:auto!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    width:100%!important;
+    gap:1px!important;
+    box-shadow:none!important;
+    background:var(--ha-line)!important;
+  }
+  body.home-atlas-page .ha-o6-panel>div{padding:9px 10px!important;min-height:74px!important}
+  body.home-atlas-page .ha-o6-panel span{font-size:.48rem!important}
+  body.home-atlas-page .ha-o6-panel strong{font-size:.66rem!important;line-height:1.3!important}
+  body.home-atlas-page .ha-o6-play{
+    grid-area:journey-play!important;
+    position:static!important;
+    inset:auto!important;
+    justify-self:stretch!important;
+    width:100%!important;
+    min-height:38px!important;
+    padding:8px 10px!important;
+    box-shadow:none!important;
+    font-size:.58rem!important;
+  }
+  body.home-atlas-page .ha-map-option6 .leaflet-control-zoom{transform:scale(.86);transform-origin:top right}
+
+  /* Metrics become a swipeable evidence rail instead of a cramped grid. */
+  body.home-atlas-page .ha-signal-strip{
+    display:flex!important;
+    grid-template-columns:none!important;
+    gap:0!important;
+    margin-top:16px!important;
+    overflow-x:auto!important;
+    scroll-snap-type:x proximity!important;
+    scrollbar-width:thin!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  body.home-atlas-page .ha-signal-strip>div{
+    flex:0 0 132px!important;
+    min-height:72px!important;
+    padding:11px 12px!important;
+    scroll-snap-align:start!important;
+    border-right:1px solid rgba(255,255,255,.14)!important;
+  }
+  body.home-atlas-page .ha-signal-strip strong{font-size:1rem!important}
+  body.home-atlas-page .ha-logo-stat{grid-template-columns:34px 1fr!important}
+  body.home-atlas-page .ha-logo-stat img{width:34px!important;height:34px!important}
+
+  /* Research becomes image -> title -> results, not layered desktop typography. */
+  body.home-atlas-page .ha-research-spread{padding:35px 0 34px!important}
+  body.home-atlas-page .ha-section-line{align-items:flex-start!important;gap:8px!important;margin-bottom:13px!important}
+  body.home-atlas-page .ha-section-line>span{font-size:.58rem!important}
+  body.home-atlas-page .ha-section-line a{font-size:.65rem!important;text-align:right!important}
+  body.home-atlas-page .ha-research-grid{grid-template-columns:1fr!important;gap:12px!important}
+  body.home-atlas-page .ha-main-research{
+    display:grid!important;
+    grid-template-rows:230px auto auto!important;
+    min-height:0!important;
+    background:var(--ha-navy)!important;
+    overflow:hidden!important;
+  }
+  body.home-atlas-page .ha-main-research::after{display:none!important}
+  body.home-atlas-page .ha-main-research>img{position:static!important;width:100%!important;height:230px!important;min-height:0!important;object-fit:cover!important}
+  body.home-atlas-page .ha-main-caption{position:static!important;inset:auto!important;padding:14px 14px 12px!important;background:var(--ha-navy)!important}
+  body.home-atlas-page .ha-main-caption span{font-size:.56rem!important}
+  body.home-atlas-page .ha-main-caption h2{font-size:1.55rem!important;line-height:1.05!important;margin:6px 0!important}
+  body.home-atlas-page .ha-main-caption p{font-size:.69rem!important;line-height:1.4!important}
+  body.home-atlas-page .ha-result-dials{position:static!important;inset:auto!important;width:auto!important;display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:1px!important;padding:0!important;background:rgba(255,255,255,.22)!important}
+  body.home-atlas-page .ha-result-dials div{padding:9px 7px!important;text-align:center!important}
+  body.home-atlas-page .ha-result-dials strong{font-size:.9rem!important}
+  body.home-atlas-page .ha-result-dials span{font-size:.48rem!important;letter-spacing:.05em!important}
+  body.home-atlas-page .ha-research-orbit{
+    display:flex!important;
+    grid-template-columns:none!important;
+    gap:9px!important;
+    overflow-x:auto!important;
+    scroll-snap-type:x proximity!important;
+    scrollbar-width:thin!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  body.home-atlas-page .ha-research-orbit a{flex:0 0 min(78vw,280px)!important;min-height:205px!important;scroll-snap-align:start!important}
+  body.home-atlas-page .ha-research-orbit img{min-height:205px!important;height:205px!important}
+
+  /* Publications: readable text, swipeable covers, compact metrics. */
+  body.home-atlas-page .ha-publication-band{padding:30px 0!important}
+  body.home-atlas-page .ha-publication-grid{grid-template-columns:1fr!important;gap:18px!important}
+  body.home-atlas-page .ha-publication-copy h2{font-size:1.65rem!important;line-height:1.08!important}
+  body.home-atlas-page .ha-cover-stack{
+    justify-content:flex-start!important;
+    align-items:stretch!important;
+    gap:10px!important;
+    min-height:0!important;
+    overflow-x:auto!important;
+    padding:4px 2px 12px!important;
+    scroll-snap-type:x proximity!important;
+    scrollbar-width:thin!important;
+  }
+  body.home-atlas-page .ha-cover-stack a,
+  body.home-atlas-page .ha-cover-stack a:nth-child(1),
+  body.home-atlas-page .ha-cover-stack a:nth-child(2),
+  body.home-atlas-page .ha-cover-stack a:nth-child(3){
+    flex:0 0 132px!important;
+    width:132px!important;
+    transform:none!important;
+    scroll-snap-align:start!important;
+  }
+  body.home-atlas-page .ha-cover-stack a:hover{transform:none!important}
+  body.home-atlas-page .ha-pub-numbers{grid-template-columns:repeat(3,1fr)!important;gap:8px!important}
+  body.home-atlas-page .ha-pub-numbers div{padding:9px 0!important}
+  body.home-atlas-page .ha-pub-numbers strong{font-size:1.45rem!important}
+  body.home-atlas-page .ha-pub-numbers span{font-size:.58rem!important}
+
+  /* Applied capability remains visual but uses a phone-native vertical feed. */
+  body.home-atlas-page .ha-capability-atlas{padding:34px 0!important}
+  body.home-atlas-page .ha-capability-mosaic{display:grid!important;grid-template-columns:1fr!important;grid-template-rows:none!important;gap:9px!important}
+  body.home-atlas-page .ha-cap-a,
+  body.home-atlas-page .ha-cap-b,
+  body.home-atlas-page .ha-cap-c,
+  body.home-atlas-page .ha-cap-d{grid-column:auto!important;grid-row:auto!important;min-height:205px!important;height:205px!important}
+  body.home-atlas-page .ha-cap-teaching{height:auto!important;min-height:245px!important}
+  body.home-atlas-page .ha-cap>div{left:13px!important;right:13px!important;bottom:12px!important}
+  body.home-atlas-page .ha-cap strong{font-size:1.18rem!important}
+
+  /* Certificates are swipeable cards instead of tiny two-column tiles. */
+  body.home-atlas-page .ha-certification-gallery{padding:32px 0 40px!important}
+  body.home-atlas-page .ha-certification-heading{grid-template-columns:1fr!important;gap:7px!important;margin:12px 0 14px!important}
+  body.home-atlas-page .ha-certification-heading h2{font-size:1.65rem!important;line-height:1.08!important}
+  body.home-atlas-page .ha-certification-heading p{font-size:.78rem!important}
+  body.home-atlas-page .ha-certificate-grid{
+    display:flex!important;
+    grid-template-columns:none!important;
+    gap:9px!important;
+    overflow-x:auto!important;
+    padding-bottom:6px!important;
+    scroll-snap-type:x proximity!important;
+    scrollbar-width:thin!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  body.home-atlas-page .ha-certificate-grid>a{flex:0 0 min(74vw,270px)!important;scroll-snap-align:start!important}
+  body.home-atlas-page .ha-certificate-grid figure{height:150px!important}
+
+  /* ---------- StoryMap pages: map becomes a compact context card ---------- */
+  body.story-page .spatial-story{padding:20px 0 42px!important}
+  body.story-page .story-layout{display:flex!important;flex-direction:column!important;gap:18px!important}
+  body.story-page .story-layout>div:last-child{display:contents!important}
+  body.story-page .story-intro{order:1!important;width:100%!important;margin-bottom:12px!important;padding-bottom:10px!important}
+  body.story-page .story-map-column{order:2!important;position:static!important;top:auto!important;width:100%!important}
+  body.story-page .story-chapters{order:3!important;width:100%!important}
+  body.story-page .inline-page-title{font-size:2rem!important;line-height:1.02!important}
+  body.story-page .story-intro p{font-size:.82rem!important;line-height:1.5!important}
+  body.story-page .story-map-shell{border-radius:0!important;overflow:hidden!important}
+  body.story-page .story-map-head{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:10px!important;align-items:end!important;padding:12px!important}
+  body.story-page .story-map-head h2{font-size:1.03rem!important;line-height:1.15!important}
+  body.story-page .story-map-head p{font-size:.7rem!important;line-height:1.38!important}
+  body.story-page .story-map-reset{margin:0!important;padding:7px 9px!important;font-size:.68rem!important}
+  body.story-page .story-map,
+  body.story-page .story-map-fallback{height:250px!important;min-height:250px!important}
+  body.story-page .story-map-caption{min-height:56px!important;padding:9px 11px!important}
+  body.story-page .story-chapters{grid-template-columns:1fr!important;gap:11px!important}
+  body.story-page .story-chapter{display:grid!important;grid-template-columns:100px minmax(0,1fr)!important;grid-template-areas:"media body"!important;min-height:132px!important;height:auto!important;overflow:hidden!important}
+  body.story-page .story-chapter-media{grid-area:media!important;width:100px!important;height:100%!important;min-height:132px!important;margin:0!important;padding:0!important;border:0!important;border-right:1px solid var(--line)!important}
+  body.story-page .story-chapter-media img{width:100%!important;height:100%!important;min-height:132px!important;object-fit:cover!important}
+  body.story-page .story-chapter-body{grid-area:body!important;display:flex!important;flex-direction:column!important;gap:7px!important;padding:12px!important}
+  body.story-page .story-chapter h3{font-size:1rem!important;line-height:1.2!important;margin:0 0 5px!important}
+  body.story-page .story-summary{font-size:.75rem!important;line-height:1.42!important;-webkit-line-clamp:3!important}
+  body.story-page .story-chapter-meta{margin-top:auto!important;padding:7px 0 0!important;border:0!important;border-top:1px solid var(--line)!important;display:block!important}
+  body.story-page .story-more{display:inline-flex!important;width:auto!important;padding:6px 8px!important;font-size:.67rem!important}
+  body.story-page[data-story-page="research"] .research-story-group-head{grid-template-columns:1fr!important;gap:4px!important;align-items:start!important}
+  body.story-page[data-story-page="research"] .research-story-group-head p{font-size:.72rem!important}
+
+  /* Publications need more horizontal room for bibliographic text. */
+  #publication-record-page .publication-record-card{
+    grid-template-columns:1fr!important;
+    grid-template-areas:"media" "body"!important;
+    grid-template-rows:auto auto!important;
+    min-height:0!important;
+    height:auto!important
+  }
+  #publication-record-page .publication-record-card>.story-step{display:none!important}
+  #publication-record-page .publication-record-media{
+    width:100%!important;
+    height:172px!important;
+    min-height:172px!important;
+    padding:8px!important;
+    border-right:0!important;
+    border-bottom:1px solid var(--line)!important
+  }
+  #publication-record-page .publication-record-media img{width:100%!important;height:100%!important;min-height:0!important;max-height:156px!important;object-fit:contain!important}
+  #publication-record-page .publication-record-body{display:block!important;width:100%!important;min-height:0!important;padding:12px!important}
+  #publication-record-page .publication-record-main{width:100%!important}
+  #publication-record-page .publication-record-card h3{font-size:1rem!important;line-height:1.2!important}
+  #publication-record-page .story-publication-authors{font-size:.69rem!important;line-height:1.4!important}
+  #publication-record-page .publication-facts{grid-template-columns:1fr!important;gap:5px!important}
+  #publication-record-page .publication-facts .publication-fact-wide{grid-column:auto!important}
+  #publication-record-page .publication-action-panel{
+    display:grid!important;
+    grid-template-columns:auto minmax(0,1fr)!important;
+    gap:8px 12px!important;
+    width:100%!important;
+    margin-top:10px!important;
+    padding:10px 0 0!important;
+    border-left:0!important;
+    border-top:1px solid var(--line)!important
+  }
+  #publication-record-page .publication-side-facts{margin:0!important}
+  #publication-record-page .publication-action-panel .story-more{grid-column:1/-1!important;width:100%!important;margin:2px 0 0!important}
+  #publication-record-page .publication-action-panel small{display:none!important}
+
+  /* ---------- Teaching & Capacity Building ---------- */
+  body.teaching-capacity-page .tc-shell{padding-top:16px!important;padding-bottom:42px!important}
+  body.teaching-capacity-page .tc-breadcrumbs{font-size:.68rem!important;margin-bottom:14px!important}
+  body.teaching-capacity-page .tc-intro{grid-template-columns:1fr!important;gap:8px!important;padding:0 0 18px!important}
+  body.teaching-capacity-page .tc-intro h1{font-size:2.05rem!important;line-height:1.03!important;letter-spacing:-.035em!important}
+  body.teaching-capacity-page .tc-summary-card{padding:12px!important}
+  body.teaching-capacity-page .tc-summary-card p{font-size:.8rem!important;line-height:1.5!important}
+  body.teaching-capacity-page .tc-summary-meta{display:flex!important;flex-wrap:wrap!important;gap:5px!important}
+  body.teaching-capacity-page .tc-records{gap:18px!important}
+  body.teaching-capacity-page .tc-record{padding:0!important;overflow:hidden!important}
+  body.teaching-capacity-page .tc-record-head{grid-template-columns:1fr!important;gap:10px!important;padding:14px!important}
+  body.teaching-capacity-page .tc-record-head h2{font-size:1.35rem!important;line-height:1.12!important}
+  body.teaching-capacity-page .tc-role{grid-template-columns:58px minmax(0,1fr)!important;gap:4px 8px!important;padding-top:9px!important;border-top:1px solid var(--line)!important}
+  body.teaching-capacity-page .tc-record-grid,
+  body.teaching-capacity-page .tc-record-grid-reverse{grid-template-columns:1fr!important;gap:0!important}
+  body.teaching-capacity-page .tc-record-copy{padding:14px!important}
+  body.teaching-capacity-page .tc-record-copy p,
+  body.teaching-capacity-page .tc-teaching-points li{font-size:.78rem!important;line-height:1.5!important}
+  body.teaching-capacity-page .tc-photo-main img,
+  body.teaching-capacity-page .tc-photo-pair img,
+  body.teaching-capacity-page .tc-barc-visual img,
+  body.teaching-capacity-page .tc-esri-visual img{width:100%!important;height:auto!important;max-height:none!important}
+  body.teaching-capacity-page .tc-photo-pair,
+  body.teaching-capacity-page .tc-barc-visual{grid-template-columns:1fr 1fr!important;gap:1px!important}
+  body.teaching-capacity-page figcaption{font-size:.67rem!important;line-height:1.38!important}
+
+  /* ---------- Credentials / development ---------- */
+  body.credential-page .credential-grid{grid-template-columns:1fr!important;gap:10px!important}
+  body.credential-page .credential-card{display:grid!important;grid-template-columns:88px minmax(0,1fr)!important;min-height:128px!important}
+  body.credential-page .credential-card figure,
+  body.credential-page .credential-card img{width:88px!important;height:100%!important;min-height:128px!important;object-fit:cover!important}
+  body.credential-page .credential-copy{padding:11px!important}
+
+  /* ---------- GIS automation ---------- */
+  body.automation-compact-page .automation-project-group-grid{grid-template-columns:1fr!important;gap:11px!important}
+  body.automation-compact-page .automation-project-card,
+  body.automation-compact-page .automation-project-browser,
+  body.automation-compact-page .automation-project-detail{min-width:0!important}
+  body.automation-compact-page .automation-project-card{padding:13px!important}
+  body.automation-compact-page .automation-evidence-table{margin-inline:0!important}
+
+  /* ---------- Contact & CV ---------- */
+  body.professor-contact-page .compact-contact-heading{grid-template-columns:1fr!important;gap:8px!important}
+  body.professor-contact-page .professor-quick-actions{grid-template-columns:1fr!important;gap:7px!important}
+  body.professor-contact-page .compact-address-row,
+  body.professor-contact-page .professor-contact-row,
+  body.professor-contact-page .professor-resource-row{grid-template-columns:1fr!important;gap:5px!important}
+  body.professor-contact-page .compact-contact-map{height:260px!important;min-height:260px!important}
+  body.professor-contact-page a{overflow-wrap:anywhere}
+
+  /* ---------- Education ---------- */
+  body.simple-education-page .education-simple-intro{grid-template-columns:1fr!important;gap:10px!important}
+  body.simple-education-page .education-degree-list{grid-template-columns:1fr!important}
+  body.simple-education-page .education-degree-card{grid-template-columns:42px minmax(0,1fr)!important;gap:10px!important;padding:13px!important}
+
+  /* ---------- Research detail pages ---------- */
+  body.academic-research-page .research-detail-intro{padding:14px 0!important}
+  body.academic-research-page .research-detail-intro h1{font-size:1.72rem!important;line-height:1.1!important;overflow-wrap:normal!important;word-break:normal!important}
+  body.academic-research-page .research-detail-summary{font-size:.86rem!important;line-height:1.52!important}
+  body.academic-research-page .research-detail-keylines>div{grid-template-columns:1fr!important;gap:2px!important;padding:7px 0!important}
+  body.academic-research-page .research-detail-visual img{width:100%!important;height:auto!important;aspect-ratio:auto!important}
+  body.academic-research-page .academic-objectives,
+  body.academic-research-page .academic-figure-pair{grid-template-columns:1fr!important}
+  body.academic-research-page .academic-authorship-box dl>div{grid-template-columns:1fr!important;gap:2px!important}
+  body.academic-research-page .research-detail-disclosure summary{padding:12px 36px 12px 13px!important;font-size:.9rem!important}
+  body.academic-research-page .research-detail-disclosure-content{padding:12px 13px 5px!important}
+
+  /* ---------- UAV / field survey ---------- */
+  body.uav-field-page .academic-page-intro-inner,
+  body.uav-field-page .field-context-grid,
+  body.uav-field-page .evidence-record,
+  body.uav-field-page .professor-storymap-layout,
+  body.uav-field-page .professor-academic-layout,
+  body.uav-field-page .field-platform-summary,
+  body.uav-field-page .story-strip-grid,
+  body.uav-field-page .engagement-showcase{grid-template-columns:1fr!important}
+  body.uav-field-page .field-context-grid-single .field-map-wrap,
+  body.uav-field-page .compact-right-map,
+  body.uav-field-page .compact-right-map-wide{height:250px!important;min-height:250px!important}
+  body.uav-field-page .field-map-filters{display:flex!important;flex-wrap:nowrap!important;gap:5px!important;overflow-x:auto!important;padding-bottom:4px!important;-webkit-overflow-scrolling:touch!important}
+  body.uav-field-page .field-map-filters button{flex:0 0 auto!important;white-space:nowrap!important}
+  body.uav-field-page .preparation-media-grid-compact,
+  body.uav-field-page .processing-media-grid-compact{grid-template-columns:1fr!important;grid-template-rows:none!important}
+  body.uav-field-page .preparation-media-grid-compact>*{grid-column:auto!important;grid-row:auto!important}
+  body.uav-field-page .academic-video-card video{height:auto!important;max-height:380px!important}
+
+  /* ---------- Urban planning ---------- */
+  body.urban-planning-page .up-v53-intro,
+  body.urban-planning-page .up-v53-storymap,
+  body.urban-planning-page .up-v53-story-grid,
+  body.urban-planning-page .up-v53-landscape-grid,
+  body.urban-planning-page .up-v53-mini-grid,
+  body.urban-planning-page .up-v53-media-row,
+  body.urban-planning-page .up-v53-youtube-row,
+  body.urban-planning-page .up-v53-story-head{grid-template-columns:1fr!important}
+  body.urban-planning-page .up-v53-map{height:270px!important;min-height:270px!important}
+  body.urban-planning-page .up-v53-place-panel{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+
+  /* ---------- footer ---------- */
+  .site-footer{display:block!important;padding:26px 14px!important;font-size:.76rem!important;line-height:1.5!important}
+  .site-footer>*+*{margin-top:8px!important}
+  .site-footer a{overflow-wrap:anywhere}
+}
+
+@media (max-width: 480px){
+  .container,
+  .home-atlas-page .container,
+  .tc-shell,
+  .credential-shell,
+  .automation-shell,
+  .education-simple-shell,
+  .uav-field-page .container,
+  .urban-planning-page .container{width:calc(100% - 20px)!important}
+
+  .nav-wrap{width:calc(100% - 12px)!important;gap:5px!important}
+  .brand-text-only strong{font-size:.94rem!important}
+  .menu,.theme{flex-basis:34px!important;width:34px!important;height:34px!important;min-width:34px!important}
+  .site-header nav{left:6px!important;right:6px!important}
+
+  body.home-atlas-page .ha-identity h2{font-size:1.82rem!important}
+  body.home-atlas-page .ha-summary-card ul{grid-template-columns:1fr!important}
+  body.home-atlas-page .ha-map-option6 .ha-map{height:285px!important;min-height:285px!important}
+  body.home-atlas-page .ha-o6-panel>div{min-height:78px!important;padding:8px!important}
+  body.home-atlas-page .ha-o6-panel strong{font-size:.61rem!important}
+  body.home-atlas-page .ha-main-research{grid-template-rows:205px auto auto!important}
+  body.home-atlas-page .ha-main-research>img{height:205px!important}
+  body.home-atlas-page .ha-main-caption h2{font-size:1.38rem!important}
+  body.home-atlas-page .ha-result-dials strong{font-size:.82rem!important}
+  body.home-atlas-page .ha-pub-numbers span{font-size:.53rem!important}
+
+  body.story-page .story-chapter{grid-template-columns:84px minmax(0,1fr)!important}
+  body.story-page .story-chapter-media{width:84px!important;min-height:128px!important}
+  body.story-page .story-chapter-media img{min-height:128px!important}
+  body.story-page .story-chapter-body{padding:10px!important}
+
+  body.teaching-capacity-page .tc-photo-pair,
+  body.teaching-capacity-page .tc-barc-visual{grid-template-columns:1fr!important}
+
+  body.professor-contact-page .compact-contact-map{height:230px!important;min-height:230px!important}
+  body.uav-field-page .field-context-grid-single .field-map-wrap,
+  body.uav-field-page .compact-right-map,
+  body.uav-field-page .compact-right-map-wide{height:225px!important;min-height:225px!important}
+}
