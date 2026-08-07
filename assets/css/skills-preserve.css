@@ -1,0 +1,7 @@
+
+/* Expertise v14: preserve the original card design and content; remove only the left capability index. */
+.expertise-story-without-index .story-layout{display:block!important;max-width:none}
+.expertise-story-without-index .compact-story-records{width:100%}
+.expertise-story-without-index .story-intro{max-width:860px}
+.expertise-story-without-index .story-chapters{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+@media(max-width:780px){.expertise-story-without-index .story-chapters{grid-template-columns:1fr!important}}

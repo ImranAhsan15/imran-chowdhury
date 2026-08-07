@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a26"/><stop offset="1" stop-color="#0c3542"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#5dd9c1" stroke-opacity=".08"/></pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="720" height="880" fill="url(#bg)"/>
+  <rect width="720" height="880" fill="url(#grid)"/>
+  <g opacity=".12" fill="#d9fff7">
+    <path d="M0 128 96 95l90 28 61-59 124 17 70-41 103 34 77-19 99 41v120L0 246Z"/>
+    <path d="M0 612 124 569l75 30 91-52 105 31 74-47 112 41 139-20v328H0Z"/>
+  </g>
+  <g stroke="#88ead7" stroke-opacity=".25" fill="none">
+    <path d="M-20 705C90 638 162 670 240 586s145-105 248-71 152-41 251-102" stroke-width="14"/>
+    <path d="M-10 328c113 20 190-16 279 28 72 36 125 7 189-25 88-44 165-12 280 52" stroke-width="8"/>
+    <path d="M108 -20c22 130 4 215 58 284 63 82 31 173 8 244-34 103 2 215 64 392" stroke-width="5"/>
+  </g>
+  <g stroke="#f2c77d" stroke-opacity=".55" fill="none" stroke-dasharray="8 8">
+    <path d="M70 768C202 664 265 708 341 607c71-95 164-46 246-129"/>
+    <path d="M83 180c117 82 229 60 343 20 92-33 147 4 226 83"/>
+  </g>
+  <g fill="#dffaf4" fill-opacity=".18" stroke="#7ce4cf" stroke-opacity=".65">
+    <path d="M78 245h76v54H78z"/><path d="M171 222h58v89h-58z"/><path d="M250 256h88v64h-88z"/>
+    <path d="M390 188h93v68h-93z"/><path d="M497 215h65v112h-65z"/><path d="M581 181h74v63h-74z"/>
+    <path d="M67 412h95v72H67z"/><path d="M185 382h76v51h-76z"/><path d="M285 405h91v93h-91z"/>
+    <path d="M404 377h61v77h-61z"/><path d="M489 397h97v71h-97z"/><path d="M603 365h53v100h-53z"/>
+    <path d="M82 580h63v91H82z"/><path d="M166 557h95v57h-95z"/><path d="M282 592h72v63h-72z"/>
+    <path d="M387 550h80v88h-80z"/><path d="M493 582h66v72h-66z"/><path d="M582 540h81v107h-81z"/>
+  </g>
+  <g fill="none" stroke="#ff6b6b" stroke-width="4" filter="url(#glow)">
+    <path d="M285 405h91v93h-91z"/><path d="M489 397h97v71h-97z"/>
+  </g>
+  <g fill="#55d6be" filter="url(#glow)">
+    <circle cx="112" cy="438" r="7"/><circle cx="432" cy="416" r="7"/><circle cx="626" cy="598" r="7"/>
+  </g>
+  <g fill="#07151f" stroke="#55d6be" stroke-width="2">
+    <rect x="395" y="285" width="176" height="46" rx="12"/><rect x="76" y="686" width="188" height="46" rx="12"/>
+  </g>
+  <g fill="#dffaf4" font-family="Arial,sans-serif" font-size="16" font-weight="700">
+    <text x="414" y="314">Spatial QC layer</text><text x="94" y="715">Raster → Vector → ML</text>
+  </g>
+  <g transform="translate(530 680)">
+    <circle r="74" fill="#07151f" fill-opacity=".8" stroke="#55d6be" stroke-opacity=".5"/>
+    <path d="M-26 18V-8l26-18 26 18v26L0 36Z" fill="#55d6be" fill-opacity=".22" stroke="#55d6be"/>
+    <circle cx="0" cy="0" r="8" fill="#f2c77d"/>
+    <path d="M0-26V-8M26-8 8 0M26 18 8 5M0 36V8M-26 18-8 5M-26-8-8 0" stroke="#dffaf4" stroke-opacity=".7"/>
+  </g>
+  <text x="70" y="92" fill="#dffaf4" font-family="Arial,sans-serif" font-size="24" font-weight="800">GEOSPATIAL INTELLIGENCE</text>
+  <text x="70" y="122" fill="#9bc5c7" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">IMAGERY · OBJECTS · CONTEXT · QUALITY</text>
+</svg>

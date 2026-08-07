@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#072f3b"/>
+      <stop offset="0.55" stop-color="#0b5f63"/>
+      <stop offset="1" stop-color="#103b66"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#d9fffb" stroke-opacity=".11" stroke-width="1"/>
+      <path d="M40 0V80M0 40H80" fill="none" stroke="#d9fffb" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g fill="none" stroke="#b8eee5" stroke-opacity=".22" stroke-width="2">
+    <path d="M-60 170C180 30 410 300 680 170S1170 10 1670 230"/>
+    <path d="M-80 245C180 95 420 380 720 250S1230 80 1680 300"/>
+    <path d="M-90 325C210 160 430 455 760 330S1260 165 1700 380"/>
+    <path d="M-90 410C220 230 470 535 820 410S1330 255 1710 470"/>
+    <path d="M-90 500C250 310 520 615 900 500S1400 350 1730 560"/>
+    <path d="M-90 590C280 400 570 690 980 610S1450 460 1750 660"/>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M110 720C320 620 410 500 610 520S920 690 1110 530 1380 280 1530 340" stroke="#f7b84b" stroke-opacity=".7" stroke-width="8"/>
+    <path d="M150 760C340 675 440 550 620 575S930 725 1140 565 1410 330 1570 390" stroke="#fff3c8" stroke-opacity=".45" stroke-width="2"/>
+    <path d="M260 160L430 310 590 250 790 390 930 325 1090 430 1290 360 1470 510" stroke="#8ce9df" stroke-opacity=".55" stroke-width="4"/>
+  </g>
+  <g fill="#f7b84b" filter="url(#glow)">
+    <circle cx="430" cy="310" r="8"/><circle cx="790" cy="390" r="8"/><circle cx="1090" cy="430" r="8"/><circle cx="1290" cy="360" r="8"/>
+  </g>
+  <g transform="translate(1110 95)">
+    <circle cx="155" cy="155" r="122" fill="none" stroke="#d8fffa" stroke-opacity=".3" stroke-width="2"/>
+    <circle cx="155" cy="155" r="88" fill="none" stroke="#d8fffa" stroke-opacity=".18" stroke-width="1"/>
+    <ellipse cx="155" cy="155" rx="54" ry="122" fill="none" stroke="#d8fffa" stroke-opacity=".23" stroke-width="2"/>
+    <path d="M33 155H277M49 105H261M49 205H261" stroke="#d8fffa" stroke-opacity=".23" stroke-width="2"/>
+    <path d="M155 22V288" stroke="#f7b84b" stroke-opacity=".5" stroke-width="2"/>
+    <circle cx="218" cy="118" r="10" fill="#f7b84b"/>
+    <circle cx="218" cy="118" r="24" fill="none" stroke="#f7b84b" stroke-opacity=".35" stroke-width="2"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" fill="#d8fffa" fill-opacity=".55">
+    <text x="48" y="58">23.8103° N</text><text x="48" y="84">90.4125° E</text>
+    <text x="1315" y="840">GIS · EO · GeoAI</text>
+  </g>
+</svg>

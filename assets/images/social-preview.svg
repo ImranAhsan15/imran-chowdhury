@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061722"/><stop offset="1" stop-color="#0d4a4c"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g opacity=".18" stroke="#55d6be" fill="none"><path d="M0 470C190 350 335 412 470 290s271-97 392-6 214 11 338-78" stroke-width="22"/><path d="M180 0c-15 132 20 220 87 286s41 183 93 344" stroke-width="12"/></g>
+  <g fill="#dffaf4" fill-opacity=".12" stroke="#55d6be"><rect x="790" y="122" width="130" height="90"/><rect x="940" y="162" width="110" height="126"/><rect x="760" y="280" width="158" height="116"/><rect x="958" y="336" width="140" height="98"/></g>
+  <text x="92" y="190" fill="#55d6be" font-family="Arial,sans-serif" font-size="28" font-weight="700">GEOAI · GISCIENCE · REMOTE SENSING</text>
+  <text x="92" y="286" fill="#f4fffd" font-family="Arial,sans-serif" font-size="64" font-weight="800">Shah Imran Ahsan</text>
+  <text x="92" y="360" fill="#f4fffd" font-family="Arial,sans-serif" font-size="64" font-weight="800">Chowdhury</text>
+  <text x="92" y="430" fill="#b6d4d1" font-family="Arial,sans-serif" font-size="28">GIS Analyst · Geospatial Programmer · GeoAI Researcher</text>
+</svg>

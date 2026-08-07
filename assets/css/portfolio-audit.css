@@ -1,0 +1,184 @@
+
+/* ============================================================
+   PORTFOLIO-WIDE TYPOGRAPHY & CONTENT READABILITY AUDIT — v34
+   Consistent scale, readable labels, restrained headings.
+   ============================================================ */
+html{font-size:16px}
+body{font-size:1rem;line-height:1.65}
+.site-header nav a{font-size:.82rem!important;line-height:1.25!important}
+.brand span:last-child strong{font-size:1.18rem!important}
+.brand small{font-size:.7rem!important}
+.site-footer,.site-footer p,.site-footer a{font-size:.82rem!important;line-height:1.55!important}
+.eyebrow,.kicker,.academic-label,.academic-section-label,.blog-meta{font-size:.72rem!important;line-height:1.35!important;letter-spacing:.1em!important}
+.button,.text-link{font-size:.84rem!important}
+
+/* Standard page-heading hierarchy */
+.page-hero h1,.blog-page .page-hero h1,.inline-page-title,.compact-contact-page h1,
+.portfolio-route-panel h1{font-size:clamp(2.15rem,3.6vw,3rem)!important;line-height:1.06!important;letter-spacing:-.035em!important}
+.story-intro h2,.credential-record-head h2{font-size:clamp(1.75rem,2.7vw,2.25rem)!important;line-height:1.14!important}
+.story-intro p,.credential-record-head>p{font-size:.9rem!important;line-height:1.6!important}
+
+/* Story pages: maps and cards */
+.story-map-head h2{font-size:1.25rem!important;line-height:1.22!important}
+.story-map-head p{font-size:.82rem!important;line-height:1.55!important}
+.story-map-reset{font-size:.74rem!important}
+.story-map-caption span,.coord-label{font-size:.7rem!important}
+.story-map-caption strong{font-size:1rem!important}
+.story-map-caption p{font-size:.8rem!important}
+.story-chapter h3{font-size:clamp(1.18rem,1.7vw,1.42rem)!important;line-height:1.2!important}
+.story-chapter-kicker{font-size:.7rem!important;line-height:1.35!important;min-height:0!important}
+.story-summary{font-size:.86rem!important;line-height:1.55!important}
+.story-more{font-size:.78rem!important;line-height:1.3!important}
+.story-location,.story-location span,.story-metadata-block small{font-size:.72rem!important}
+.story-chapter .tags span{font-size:.7rem!important}
+.research-story-group-head .eyebrow{font-size:.72rem!important}
+.research-story-group-head p{font-size:.82rem!important;line-height:1.5!important}
+
+/* Publication records */
+#publication-record-page .publication-record-topline span{font-size:.68rem!important;line-height:1.3!important}
+#publication-record-page .publication-record-card h3{font-size:1.18rem!important;line-height:1.18!important}
+#publication-record-page .story-publication-authors{font-size:.78rem!important;line-height:1.45!important}
+#publication-record-page .story-publication-authors>span{font-size:.67rem!important}
+#publication-record-page .publication-facts dt,
+#publication-record-page .publication-side-facts span{font-size:.65rem!important;line-height:1.3!important}
+#publication-record-page .publication-facts dd,
+#publication-record-page .publication-side-facts strong{font-size:.74rem!important;line-height:1.4!important}
+#publication-record-page .publication-action-year{font-size:1.4rem!important}
+#publication-record-page .publication-action-panel .story-more{font-size:.76rem!important;padding:9px 10px!important}
+#publication-record-page .publication-action-panel small{font-size:.67rem!important}
+#publication-record-page .publication-portfolio-author{font-size:inherit!important}
+
+/* Research-detail pages */
+.research-detail-coherent .research-detail-intro h1,
+.compact-research-detail .research-detail-intro h1{font-size:clamp(2rem,3.2vw,2.65rem)!important;line-height:1.08!important}
+.research-detail-label{font-size:.72rem!important;line-height:1.35!important}
+.research-detail-summary{font-size:.96rem!important;line-height:1.58!important}
+.research-detail-keylines dt{font-size:.72rem!important;line-height:1.35!important}
+.research-detail-keylines dd{font-size:.86rem!important;line-height:1.5!important}
+.research-detail-visual-caption,.research-detail-hero-visual figcaption{font-size:.75rem!important;line-height:1.45!important}
+.research-detail-disclosure>summary{font-size:1rem!important;line-height:1.35!important}
+.research-detail-disclosure-content p,
+.research-detail-disclosure-content li{font-size:.9rem!important;line-height:1.62!important}
+.research-detail-disclosure-content h2{font-size:1.3rem!important;line-height:1.25!important}
+.research-detail-disclosure-content .academic-section-label{font-size:.7rem!important}
+.research-detail-disclosure-content table th,
+.research-detail-disclosure-content table td{font-size:.82rem!important;line-height:1.5!important}
+.research-detail-back-link{font-size:.84rem!important}
+
+/* Development and certification */
+.credential-record-head h2{font-size:clamp(2rem,3vw,2.55rem)!important}
+.credential-group-head>span{font-size:.72rem!important}
+.credential-group-head h3{font-size:1.24rem!important}
+.credential-group-head p{font-size:.84rem!important;line-height:1.55!important}
+.credential-preview span,.credential-type{font-size:.68rem!important}
+.credential-year{font-size:.72rem!important}
+.credential-copy h3{font-size:1.08rem!important;line-height:1.28!important}
+.credential-issuer{font-size:.78rem!important}
+.credential-meta dt{font-size:.66rem!important}
+.credential-meta dd{font-size:.75rem!important;line-height:1.42!important}
+.credential-summary{font-size:.8rem!important;line-height:1.5!important}
+.credential-action{font-size:.78rem!important}
+
+/* GIS automation */
+.automation-academic-title h1{font-size:clamp(2.1rem,3vw,2.75rem)!important;line-height:1.06!important}
+.automation-compact-kicker,.automation-project-detail-heading>div>span,
+.automation-project-footer-label,.automation-project-evidence>span,
+.automation-project-notes span{font-size:.7rem!important;line-height:1.35!important}
+.automation-academic-summary>p{font-size:.9rem!important;line-height:1.58!important}
+.automation-academic-domains span,.automation-project-tags span{font-size:.68rem!important}
+.automation-project-detail h2{font-size:1.38rem!important;line-height:1.15!important}
+.automation-project-format{font-size:.7rem!important}
+.automation-project-summary{font-size:.88rem!important;line-height:1.55!important}
+.automation-project-facts dt{font-size:.7rem!important}
+.automation-project-facts dd,.automation-project-notes p{font-size:.82rem!important;line-height:1.52!important}
+.automation-project-evidence p{font-size:.72rem!important;line-height:1.45!important;max-height:none!important}
+.automation-project-github{font-size:.76rem!important}
+.automation-project-github-note{font-size:.72rem!important}
+.automation-project-reviewer span{font-size:.68rem!important}
+.automation-project-reviewer strong{font-size:.8rem!important}
+.automation-project-group h3{font-size:.9rem!important}
+.automation-project-tab strong{font-size:.82rem!important}
+.automation-project-tab small{font-size:.72rem!important}
+
+/* Homepage and standard cards */
+.compact-home-biography p{font-size:1rem!important;line-height:1.7!important}
+.compact-stats .stat strong{font-size:1.12rem!important}
+.compact-stats .stat span{font-size:.76rem!important;line-height:1.4!important}
+.home-social-link small{font-size:.74rem!important}
+.card p,.project-body p,.gallery-card p,.media-note p{font-size:.9rem!important;line-height:1.6!important}
+.card h3,.project-body h3,.gallery-card h3{font-size:1.24rem!important;line-height:1.25!important}
+.blog-card p{font-size:.86rem!important;line-height:1.55!important}
+
+/* Contact, education, professional, teaching, links, and auxiliary pages */
+.compact-address-label,.professor-strip-label{font-size:.72rem!important}
+.compact-contact-page p,.compact-contact-page a{font-size:.86rem!important;line-height:1.55!important}
+.timeline small,.mini-date{font-size:.74rem!important}
+.timeline li,.timeline p{font-size:.9rem!important}
+.thematic-node b{font-size:.72rem!important}
+.thematic-node span{font-size:.76rem!important;line-height:1.3!important}
+
+/* Legacy project route: no duplicated project listing */
+.portfolio-route-section{padding:72px 0}
+.portfolio-route-panel{max-width:780px;padding:34px;border:1px solid var(--line);background:var(--surface)}
+.portfolio-route-panel h1{margin:.2em 0}
+.portfolio-route-panel p{max-width:650px;color:var(--muted);font-size:1rem;line-height:1.65}
+.portfolio-route-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+/* Mobile maintains readable text without oversized headings */
+@media(max-width:780px){
+  .site-header nav a{font-size:.86rem!important;padding:11px 12px!important}
+  .page-hero h1,.blog-page .page-hero h1,.inline-page-title,.compact-contact-page h1,
+  .research-detail-coherent .research-detail-intro h1,.compact-research-detail .research-detail-intro h1,
+  .portfolio-route-panel h1{font-size:2rem!important}
+  .story-summary,.credential-summary,.automation-project-summary{font-size:.88rem!important}
+  .portfolio-route-section{padding:42px 0}
+  .portfolio-route-panel{padding:24px}
+}
+
+/* v34.1 — eliminate remaining sub-11px text in visible portfolio content */
+body.story-page small,
+body.story-page .story-record-cell small,
+body.story-page .publication-year-divider small{font-size:.72rem!important;line-height:1.35!important}
+body.story-page .leaflet-tooltip,
+body.story-page .leaflet-popup-content,
+body.story-page .story-leaflet-icon span,
+body.story-page .coordinate-marker span{font-size:.72rem!important;line-height:1.3!important}
+#publication-record-page .publication-record-topline span,
+#publication-record-page .story-publication-authors>span,
+#publication-record-page .publication-facts dt,
+#publication-record-page .publication-side-facts span,
+#publication-record-page .publication-action-panel small,
+#publication-record-page .publication-year-divider small{font-size:.72rem!important}
+.credential-preview span,.credential-type,.credential-meta dt{font-size:.72rem!important}
+.automation-academic-domains span,.automation-project-tags span,
+.automation-project-visual figcaption{font-size:.72rem!important;line-height:1.35!important}
+
+/* UAV / GNSS field page uses a separate dense visual language; retain it but keep all text readable. */
+.uav-field-page .academic-label,
+.uav-field-page .field-map-head span,
+.uav-field-page .platform-reference-card .academic-label,
+.uav-field-page .map-on-right .field-map-head span{font-size:.72rem!important;line-height:1.35!important}
+.uav-field-page .field-map-filters button,
+.uav-field-page .field-map-head button,
+.uav-field-page button{font-size:.72rem!important;line-height:1.3!important}
+.uav-field-page .platform-reference-card small,
+.uav-field-page .map-caption,
+.uav-field-page .media-group-caption,
+.uav-field-page figcaption,
+.uav-field-page small,
+.uav-field-page .academic-method-note span,
+.uav-field-page .processing-note p,
+.uav-field-page .evidence-record-copy p{font-size:.75rem!important;line-height:1.5!important}
+.uav-field-page p{font-size:.84rem!important;line-height:1.55!important}
+.uav-field-page .breadcrumbs,
+.uav-field-page .breadcrumbs a{font-size:.75rem!important}
+.themed-capability-map .thematic-core span,
+.thematic-core span{font-size:.72rem!important}
+.story-record-cell span{font-size:.76rem!important;line-height:1.45!important}
+.photo-evidence-card figcaption small{font-size:.72rem!important;line-height:1.35!important}
+.uav-field-page .field-map-fallback strong{font-size:.78rem!important}
+.uav-field-page .field-map-fallback span{font-size:.75rem!important;line-height:1.45!important}
+.uav-field-page .method-line b{font-size:.72rem!important}
+.uav-field-page .method-line span{font-size:.75rem!important;line-height:1.45!important}
+body[data-story-page="teaching"] figcaption small{font-size:.72rem!important;line-height:1.35!important}
+body.story-theme-teaching .photo-evidence-preserved .photo-evidence-card small{font-size:.72rem!important;line-height:1.35!important}

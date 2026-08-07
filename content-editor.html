@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="noindex,nofollow" name="robots"/>
+<title>Local Portfolio Content Editor</title>
+<link href="assets/images/favicon.svg" rel="icon"/>
+<link href="assets/css/styles.css?v=20260802-all-landscape-v2" rel="stylesheet"/>
+<link href="assets/css/portfolio-audit.css?v=20260805-v34" rel="stylesheet"/><link href="assets/css/portfolio-refine-v35.css?v=20260805-v40" rel="stylesheet"/></head>
+<body>
+<main class="container editor-shell">
+<section class="editor-banner">
+<span class="eyebrow" style="color:#f7cf78">Local editing helper</span>
+<h1>Update the portfolio without coding</h1>
+<p>This page is not linked from the public navigation. Edit the common content below, download the updated <strong>site-data.js</strong>, and replace the old file inside <strong>assets/js/</strong>.</p>
+</section>
+<div class="editor-toolbar">
+<button class="button" id="download-js">Download updated site-data.js</button>
+<button class="button secondary" id="download-json">Download backup JSON</button>
+<a class="button secondary" href="index.html" target="_blank" rel="noopener">Open website preview</a>
+<span class="editor-status" id="editor-status">Current website content loaded.</span>
+</div>
+<div class="editor-note">
+<strong>Images:</strong> copy your JPG, PNG, WebP, or SVG into <code>assets/uploads/images/</code>. Then enter a path such as <code>assets/uploads/images/drone-training.jpg</code>.<br/>
+<strong>Videos:</strong> upload large videos to YouTube or Vimeo and paste the public URL. Do not upload large video files to GitHub.
+    </div>
+<section class="editor-section">
+<h2>1. Basic profile</h2>
+<p class="editor-help">These values appear on the homepage, About page, CV, and footer.</p>
+<div class="editor-grid" id="profile-fields"></div>
+</section>
+<section class="editor-section">
+<h2>2. Academic profile links</h2>
+<p class="editor-help">Leave a field empty when you do not have a verified public profile.</p>
+<div class="editor-grid" id="link-fields"></div>
+</section>
+<section class="editor-section">
+<h2>3. Training you delivered</h2>
+<p class="editor-help">Use this for the ArcGIS Pro Essential Workflows training, drone-operation instruction, workshops, and future sessions where you were the trainer or evaluator.</p>
+<div id="trainingDelivery-editor"></div>
+<button class="editor-add" data-add="trainingDelivery">+ Add delivered training</button>
+</section>
+<section class="editor-section">
+<h2>4. Courses and training you completed</h2>
+<p class="editor-help">Use this for Esri Academy courses, certificates, university short courses, and your own professional development.</p>
+<div id="training-editor"></div>
+<button class="editor-add" data-add="training">+ Add completed training</button>
+</section>
+<section class="editor-section">
+<h2>5. Write-ups</h2>
+<p class="editor-help">Add research summaries, project notes, downloadable reports, or links to internal website pages.</p>
+<div id="writeups-editor"></div>
+<button class="editor-add" data-add="writeups">+ Add write-up</button>
+</section>
+<section class="editor-section">
+<h2>6. Pictures, maps, and figures</h2>
+<p class="editor-help">Enter the exact file path after copying the image into <code>assets/uploads/images/</code>.</p>
+<div id="mediaGallery-editor"></div>
+<button class="editor-add" data-add="mediaGallery">+ Add image or figure</button>
+</section>
+<section class="editor-section">
+<h2>7. Video demonstrations</h2>
+<p class="editor-help">YouTube and Vimeo URLs are converted automatically into embedded videos.</p>
+<div id="videos-editor"></div>
+<button class="editor-add" data-add="videos">+ Add video</button>
+</section>
+<section class="editor-section">
+<h2>Finish the update</h2>
+<ol>
+<li>Click <strong>Download updated site-data.js</strong>.</li>
+<li>Open your website folder and go to <code>assets/js/</code>.</li>
+<li>Delete or rename the old <code>site-data.js</code>.</li>
+<li>Move the newly downloaded file into that folder.</li>
+<li>Open <code>index.html</code> or run <code>PREVIEW_WEBSITE.bat</code> to check the result.</li>
+<li>Upload the changed files to the same GitHub repository.</li>
+</ol>
+<p class="editor-help">The editor changes content only. It does not automatically upload files to GitHub.</p>
+</section>
+</main>
+<script src="assets/js/site-data.js?v=20260805-v35"></script>
+<script src="assets/js/content-editor.js"></script>
+</body>
+</html>

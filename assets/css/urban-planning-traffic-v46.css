@@ -1,0 +1,510 @@
+.urban-planning-page{background:#f3f0e8;color:#132b3f}
+.urban-planning-page .up-shell{width:min(calc(100% - 36px),1220px);margin:0 auto;padding:22px 0 48px}
+.urban-planning-page .up-breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:18px;color:#6b7880;font-size:.78rem}
+.urban-planning-page .up-breadcrumbs a{color:#17354c;font-weight:750;text-decoration:none}
+.urban-planning-page .up-intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(310px,.85fr);gap:34px;align-items:end;padding-bottom:21px;border-bottom:1px solid #cec6b8}
+.urban-planning-page .up-kicker,.urban-planning-page .up-project-label{display:block;margin-bottom:7px;color:#a56c16;font-size:.7rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.urban-planning-page .up-intro h1{max-width:760px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.25rem,4vw,3.65rem);line-height:1.01;letter-spacing:-.042em;color:#132b3f}
+.urban-planning-page .up-intro p{max-width:780px;margin:13px 0 0;color:#53636e;font-size:.96rem;line-height:1.68}
+.urban-planning-page .up-domain-list{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.urban-planning-page .up-domain-list span{padding:7px 10px;border:1px solid #d4ccbf;border-radius:999px;background:#fbfaf6;color:#405767;font-size:.73rem;font-weight:750}
+.urban-planning-page .up-project{margin-top:24px;border-top:2px solid #17354c;padding-top:20px}
+.urban-planning-page .up-project-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:34px;align-items:end;margin-bottom:18px}
+.urban-planning-page .up-project-head h2{max-width:820px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.75rem,2.7vw,2.55rem);line-height:1.08;letter-spacing:-.026em;color:#132b3f}
+.urban-planning-page .up-project-subtitle{max-width:800px;margin:10px 0 0;color:#566670;font-size:.9rem;line-height:1.58}
+.urban-planning-page .up-project-meta{display:grid;gap:8px;margin:0}
+.urban-planning-page .up-project-meta>div{display:grid;grid-template-columns:105px 1fr;gap:10px;padding:7px 0;border-bottom:1px solid #d7cfc2}
+.urban-planning-page .up-project-meta dt{color:#a56c16;font-size:.64rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-page .up-project-meta dd{margin:0;color:#17354c;font-size:.78rem;font-weight:750;line-height:1.4}
+.urban-planning-page .up-project-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(390px,.85fr);gap:18px;align-items:stretch}
+.urban-planning-page .up-video-card,.urban-planning-page .up-project-copy{margin:0;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-page .up-video-card{display:flex;flex-direction:column;overflow:hidden}
+.urban-planning-page .up-video-card video{display:block;width:100%;aspect-ratio:16/9;background:#0f1d28;object-fit:cover}
+.urban-planning-page .up-video-card figcaption{padding:10px 13px;color:#596974;font-size:.73rem;line-height:1.5;border-top:1px solid #d7cfc2}
+.urban-planning-page .up-video-card figcaption strong{color:#17354c}
+.urban-planning-page .up-project-copy{padding:18px}
+.urban-planning-page .up-project-copy>p{margin:0;color:#4e606d;font-size:.87rem;line-height:1.64}
+.urban-planning-page .up-project-copy>p strong{color:#17354c}
+.urban-planning-page .up-code-evidence{margin-top:16px;padding-top:14px;border-top:1px solid #d8d0c3}
+.urban-planning-page .up-code-evidence h3,.urban-planning-page .up-project-bottom h3{margin:0 0 10px;font-size:.76rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#a56c16}
+.urban-planning-page .up-evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.urban-planning-page .up-evidence-grid>div{display:grid;grid-template-columns:28px 1fr;gap:8px;align-items:start;padding:8px;border:1px solid #ddd5c9;background:#faf8f2}
+.urban-planning-page .up-evidence-grid span{font-family:Georgia,"Times New Roman",serif;color:#a56c16;font-size:.85rem;font-weight:800}
+.urban-planning-page .up-evidence-grid p{margin:0;color:#3f5362;font-size:.7rem;line-height:1.42}
+.urban-planning-page .up-workflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr) auto) minmax(0,1fr);align-items:center;gap:8px;margin:18px 0;padding:12px;border-top:1px solid #cfc7b9;border-bottom:1px solid #cfc7b9}
+.urban-planning-page .up-workflow>div{min-width:0;padding:8px 9px;background:#fbfaf6;border:1px solid #d9d1c4}
+.urban-planning-page .up-workflow span{display:block;color:#a56c16;font-size:.57rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-page .up-workflow strong{display:block;margin-top:3px;color:#17354c;font-size:.74rem;line-height:1.3}
+.urban-planning-page .up-workflow i{color:#a56c16;font-style:normal;font-size:1rem;font-weight:800}
+.urban-planning-page .up-project-bottom{display:grid;grid-template-columns:1fr 1.05fr;gap:18px}
+.urban-planning-page .up-project-bottom>section{padding:16px 17px;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-page .up-project-bottom ul{margin:0;padding-left:18px;color:#465a68;font-size:.8rem;line-height:1.58}
+.urban-planning-page .up-project-bottom li+li{margin-top:5px}
+.urban-planning-page .up-scope p{margin:0;color:#52636f;font-size:.79rem;line-height:1.58}
+.urban-planning-page .up-code-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:9px 12px;border:1px solid #17354c;background:#17354c;color:#fff;text-decoration:none;font-size:.72rem;font-weight:800}
+.urban-planning-page .up-code-link:hover{background:#0f293d}
+@media(max-width:980px){
+ .urban-planning-page .up-intro,.urban-planning-page .up-project-head,.urban-planning-page .up-project-grid{grid-template-columns:1fr}
+ .urban-planning-page .up-domain-list{justify-content:flex-start}
+ .urban-planning-page .up-project-meta{max-width:620px}
+ .urban-planning-page .up-workflow{grid-template-columns:1fr 1fr 1fr}
+ .urban-planning-page .up-workflow i{display:none}
+}
+@media(max-width:680px){
+ .urban-planning-page .up-shell{width:min(calc(100% - 22px),1220px);padding-top:16px}
+ .urban-planning-page .up-intro h1{font-size:2.15rem}
+ .urban-planning-page .up-project-head h2{font-size:1.72rem}
+ .urban-planning-page .up-evidence-grid,.urban-planning-page .up-project-bottom,.urban-planning-page .up-workflow{grid-template-columns:1fr}
+ .urban-planning-page .up-project-meta>div{grid-template-columns:1fr;gap:3px}
+}
+
+
+/* v47 — published processed-result embed */
+.urban-planning-page .up-result-frame{position:relative;width:100%;aspect-ratio:16/9;background:#0f1d28;overflow:hidden}
+.urban-planning-page .up-result-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.urban-planning-page .up-result-card figcaption{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:11px 13px}
+.urban-planning-page .up-result-card figcaption>div{min-width:0}
+.urban-planning-page .up-result-card figcaption a{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;padding:7px 9px;border:1px solid #d4ccbf;background:#fbfaf6;color:#17354c;text-decoration:none;font-size:.68rem;font-weight:850;white-space:nowrap}
+.urban-planning-page .up-result-card figcaption a:hover{background:#f1ede4;border-color:#bdb3a3}
+@media(max-width:680px){
+ .urban-planning-page .up-result-card figcaption{align-items:flex-start;flex-direction:column}
+}
+
+
+/* v48 — reliable YouTube result card (no iframe / no Error 153) */
+.urban-planning-page .up-youtube-result{position:relative;aspect-ratio:16/9;background:#0f1d28;overflow:hidden}
+.urban-planning-page .up-youtube-poster{position:absolute;inset:0;display:block;color:#fff;text-decoration:none;overflow:hidden}
+.urban-planning-page .up-youtube-poster::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,15,24,.08),rgba(4,15,24,.15) 50%,rgba(4,15,24,.72));pointer-events:none}
+.urban-planning-page .up-youtube-poster img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .28s ease,filter .28s ease}
+.urban-planning-page .up-youtube-poster:hover img{transform:scale(1.015);filter:brightness(.93)}
+.urban-planning-page .up-youtube-badge{position:absolute;z-index:2;left:16px;top:15px;padding:7px 10px;border:1px solid rgba(255,255,255,.6);background:rgba(15,29,40,.83);color:#fff;font-size:.68rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-page .up-youtube-play{position:absolute;z-index:2;left:50%;top:50%;width:74px;height:52px;border-radius:14px;background:#ff0033;box-shadow:0 12px 32px rgba(0,0,0,.28);transform:translate(-50%,-50%);transition:transform .2s ease,background .2s ease}
+.urban-planning-page .up-youtube-play i{position:absolute;left:30px;top:16px;width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:17px solid #fff}
+.urban-planning-page .up-youtube-poster:hover .up-youtube-play{transform:translate(-50%,-50%) scale(1.05);background:#e6002e}
+.urban-planning-page .up-youtube-action{position:absolute;z-index:2;left:18px;right:18px;bottom:15px;display:flex;justify-content:space-between;gap:16px;align-items:center;color:#fff;font-size:.83rem;font-weight:850;text-shadow:0 1px 4px rgba(0,0,0,.55)}
+.urban-planning-page .up-youtube-action b{font-size:1rem}
+@media(max-width:680px){
+ .urban-planning-page .up-youtube-badge{left:10px;top:10px;font-size:.58rem}
+ .urban-planning-page .up-youtube-play{width:62px;height:44px;border-radius:12px}
+ .urban-planning-page .up-youtube-play i{left:25px;top:13px;border-top-width:9px;border-bottom-width:9px;border-left-width:15px}
+ .urban-planning-page .up-youtube-action{left:12px;right:12px;bottom:10px;font-size:.72rem}
+}
+
+/* v49 — compact, professor-friendly urban-planning layout */
+.urban-planning-compact-page .up-shell{width:min(calc(100% - 34px),1180px);padding:20px 0 40px}
+.urban-planning-compact-page .up-compact-intro{grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:24px;padding-bottom:16px}
+.urban-planning-compact-page .up-intro h1{max-width:700px;font-size:clamp(2rem,3.5vw,3.2rem);line-height:1.02}
+.urban-planning-compact-page .up-intro p{max-width:740px;margin-top:10px;font-size:.9rem;line-height:1.6}
+.urban-planning-compact-page .up-domain-list span{font-size:.7rem;padding:6px 10px}
+.urban-planning-compact-page .up-project{margin-top:18px;padding-top:16px}
+.urban-planning-compact-page .up-compact-head{grid-template-columns:minmax(0,1.18fr) minmax(270px,.82fr);gap:24px;margin-bottom:14px}
+.urban-planning-compact-page .up-project-head h2{max-width:780px;font-size:clamp(1.55rem,2.35vw,2.25rem);line-height:1.08}
+.urban-planning-compact-page .up-project-subtitle{font-size:.84rem;line-height:1.52;margin-top:8px;max-width:760px}
+.urban-planning-compact-page .up-compact-meta>div{grid-template-columns:98px 1fr;padding:6px 0}
+.urban-planning-compact-page .up-compact-grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(360px,.96fr);gap:16px;align-items:start}
+.urban-planning-compact-page .up-project-copy{padding:15px 16px}
+.urban-planning-compact-page .up-result-card figcaption{padding:9px 12px;font-size:.71rem}
+.urban-planning-compact-page .up-youtube-action{font-size:.78rem}
+.urban-planning-compact-page .up-compact-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px}
+.urban-planning-compact-page .up-compact-summary>div{padding:10px 11px;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-compact-page .up-compact-summary span{display:block;margin-bottom:4px;color:#a56c16;font-size:.63rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-compact-page .up-compact-summary strong{display:block;color:#17354c;font-size:.8rem;line-height:1.35}
+.urban-planning-compact-page .up-compact-evidence{margin-top:0;padding-top:0;border-top:0}
+.urban-planning-compact-page .up-code-evidence h3,.urban-planning-compact-page .up-story-map-head h3,.urban-planning-compact-page .up-story-brief h3{margin:0 0 10px;color:#a56c16;font-size:.72rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.urban-planning-compact-page .up-evidence-grid{grid-template-columns:1fr 1fr;gap:8px}
+.urban-planning-compact-page .up-evidence-grid>div{padding:8px}
+.urban-planning-compact-page .up-evidence-grid p{font-size:.72rem;line-height:1.42}
+.urban-planning-compact-page .up-mini-notes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.urban-planning-compact-page .up-mini-notes>div{padding:11px 12px;border:1px solid #d8d0c3;background:#fbfaf6}
+.urban-planning-compact-page .up-mini-notes strong{display:block;margin-bottom:5px;color:#17354c;font-size:.79rem}
+.urban-planning-compact-page .up-mini-notes p{margin:0;color:#53626e;font-size:.76rem;line-height:1.5}
+.urban-planning-compact-page .up-code-link{margin-top:12px;font-size:.7rem;padding:8px 11px}
+.urban-planning-compact-page .up-story-context{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:16px;margin-top:16px}
+.urban-planning-compact-page .up-story-map-card,.urban-planning-compact-page .up-story-brief{border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-compact-page .up-story-map-card{overflow:hidden}
+.urban-planning-compact-page .up-story-map-head{display:flex;justify-content:space-between;gap:12px;align-items:end;padding:12px 14px 10px;border-bottom:1px solid #ddd4c7;background:#faf8f2}
+.urban-planning-compact-page .up-story-map-head p{margin:0;max-width:380px;color:#5b6a74;font-size:.73rem;line-height:1.45}
+.urban-planning-compact-page .up-story-map{height:270px;width:100%}
+.urban-planning-compact-page .up-story-map-note{padding:10px 14px;color:#51626f;font-size:.76rem;line-height:1.5;border-top:1px solid #ddd4c7}
+.urban-planning-compact-page .up-story-brief{padding:14px 16px}
+.urban-planning-compact-page .up-story-brief ul{margin:0;padding-left:18px;color:#4e606d;font-size:.79rem;line-height:1.56}
+.urban-planning-compact-page .up-story-brief li+li{margin-top:6px}
+.urban-planning-compact-page .up-story-map .leaflet-bottom{display:none !important}
+.urban-planning-compact-page .up-story-map .leaflet-control-zoom{margin:10px}
+.urban-planning-compact-page .up-story-map .leaflet-bar{box-shadow:none;border:1px solid #d8d0c3}
+.urban-planning-compact-page .up-story-map .leaflet-bar a{width:24px;height:24px;line-height:24px;color:#17354c}
+.urban-planning-compact-page .up-story-map .leaflet-popup-content{font-size:.74rem;line-height:1.45;color:#17354c}
+@media(max-width:980px){
+ .urban-planning-compact-page .up-compact-intro,.urban-planning-compact-page .up-compact-head,.urban-planning-compact-page .up-compact-grid,.urban-planning-compact-page .up-story-context{grid-template-columns:1fr}
+ .urban-planning-compact-page .up-domain-list{justify-content:flex-start}
+}
+@media(max-width:720px){
+ .urban-planning-compact-page .up-shell{width:min(calc(100% - 22px),1180px);padding-top:16px}
+ .urban-planning-compact-page .up-compact-summary,.urban-planning-compact-page .up-mini-notes,.urban-planning-compact-page .up-evidence-grid{grid-template-columns:1fr}
+ .urban-planning-compact-page .up-story-map{height:240px}
+}
+
+/* v50 — integrated urban planning portfolio */
+.urban-planning-v50 .up-shell{width:min(calc(100% - 34px),1180px);padding:20px 0 42px}
+.urban-planning-v50 .up-v50-hero{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr);gap:28px;align-items:end;padding-bottom:17px;border-bottom:1px solid #cec6b8}
+.urban-planning-v50 .up-v50-hero h1{max-width:740px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.15rem,3.55vw,3.3rem);line-height:1.01;letter-spacing:-.04em;color:#132b3f}
+.urban-planning-v50 .up-v50-hero p{max-width:760px;margin:10px 0 0;color:#53636e;font-size:.9rem;line-height:1.6}
+.urban-planning-v50 .up-v50-tools{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px}
+.urban-planning-v50 .up-v50-tools span,.urban-planning-v50 .up-v50-project-meta span{padding:6px 9px;border:1px solid #d4ccbf;border-radius:999px;background:#fbfaf6;color:#405767;font-size:.69rem;font-weight:760}
+.urban-planning-v50 .up-v50-capabilities{display:grid;grid-template-columns:repeat(3,1fr);margin:14px 0 20px;border-top:1px solid #d5cdc0;border-bottom:1px solid #d5cdc0}
+.urban-planning-v50 .up-v50-capabilities>div{padding:11px 13px;border-right:1px solid #d5cdc0}
+.urban-planning-v50 .up-v50-capabilities>div:last-child{border-right:0}
+.urban-planning-v50 .up-v50-capabilities span{display:block;color:#a56c16;font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v50 .up-v50-capabilities strong{display:block;margin-top:4px;color:#17354c;font-size:.79rem;line-height:1.38}
+.urban-planning-v50 .up-v50-project{padding:18px 0 22px;border-top:2px solid #17354c}
+.urban-planning-v50 .up-v50-project+.up-v50-project{margin-top:4px}
+.urban-planning-v50 .up-v50-project-head{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(270px,.82fr);gap:24px;align-items:end;margin-bottom:14px}
+.urban-planning-v50 .up-v50-project-head h2,.urban-planning-v50 .up-v50-map-copy h2{max-width:820px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.55rem,2.3vw,2.2rem);line-height:1.08;letter-spacing:-.025em;color:#132b3f}
+.urban-planning-v50 .up-v50-project-head p{max-width:780px;margin:8px 0 0;color:#566670;font-size:.84rem;line-height:1.55}
+.urban-planning-v50 .up-v50-project-meta{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px}
+.urban-planning-v50 .up-v50-traffic-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:16px;align-items:stretch}
+.urban-planning-v50 .up-v50-video-poster{position:relative;display:block;overflow:hidden;min-height:320px;border:1px solid #cfc7b9;background:#0f1d28;color:#fff;text-decoration:none}
+.urban-planning-v50 .up-v50-video-poster::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,15,24,.03),rgba(4,15,24,.1) 55%,rgba(4,15,24,.75))}
+.urban-planning-v50 .up-v50-video-poster img{display:block;width:100%;height:100%;min-height:320px;object-fit:cover;transition:transform .25s ease}
+.urban-planning-v50 .up-v50-video-poster:hover img{transform:scale(1.015)}
+.urban-planning-v50 .up-v50-video-label,.urban-planning-v50 .up-v50-video-link,.urban-planning-v50 .up-v50-play{position:absolute;z-index:2}
+.urban-planning-v50 .up-v50-video-label{left:14px;top:14px;padding:6px 9px;background:rgba(15,29,40,.84);border:1px solid rgba(255,255,255,.58);font-size:.64rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v50 .up-v50-video-link{left:16px;bottom:14px;font-size:.78rem;font-weight:850}
+.urban-planning-v50 .up-v50-play{left:50%;top:50%;width:66px;height:46px;border-radius:12px;background:#ff0033;transform:translate(-50%,-50%);box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.urban-planning-v50 .up-v50-play::after{content:"";position:absolute;left:27px;top:13px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:17px solid #fff}
+.urban-planning-v50 .up-v50-traffic-copy{padding:15px 16px;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v50 .up-v50-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.urban-planning-v50 .up-v50-flow>div{padding:10px;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v50 .up-v50-flow small{display:block;color:#a56c16;font-size:.61rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v50 .up-v50-flow strong{display:block;margin-top:4px;color:#17354c;font-size:.79rem;line-height:1.35}
+.urban-planning-v50 .up-v50-traffic-copy ul{margin:0;padding-left:19px;color:#465a68;font-size:.79rem;line-height:1.57}
+.urban-planning-v50 .up-v50-traffic-copy li+li{margin-top:4px}
+.urban-planning-v50 .up-v50-note{margin-top:12px;padding:10px 11px;border-left:3px solid #a56c16;background:#faf8f2;color:#53636f;font-size:.74rem;line-height:1.5}
+.urban-planning-v50 .up-v50-landscape-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);gap:16px}
+.urban-planning-v50 .up-v50-landscape-hero{margin:0;overflow:hidden;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v50 .up-v50-landscape-hero img{display:block;width:100%;height:100%;min-height:390px;object-fit:cover}
+.urban-planning-v50 .up-v50-landscape-hero figcaption{padding:9px 12px;border-top:1px solid #d8d0c3;color:#596974;font-size:.72rem;line-height:1.48}
+.urban-planning-v50 .up-v50-landscape-copy{padding:15px 16px;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v50 .up-v50-role-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:13px}
+.urban-planning-v50 .up-v50-role-grid>div{padding:10px;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v50 .up-v50-role-grid span{display:block;color:#a56c16;font-size:.61rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v50 .up-v50-role-grid strong{display:block;margin-top:4px;color:#17354c;font-size:.78rem;line-height:1.38}
+.urban-planning-v50 .up-v50-landscape-copy h3{margin:0 0 9px;color:#a56c16;font-size:.72rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.urban-planning-v50 .up-v50-interventions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.urban-planning-v50 .up-v50-interventions>div{padding:10px;border:1px solid #d8d0c3;background:#fbfaf6}
+.urban-planning-v50 .up-v50-interventions strong{display:block;color:#17354c;font-size:.78rem}
+.urban-planning-v50 .up-v50-interventions span{display:block;margin-top:4px;color:#586873;font-size:.7rem;line-height:1.42}
+.urban-planning-v50 .up-v50-software-line{margin-top:11px;padding-top:10px;border-top:1px solid #d8d0c3;color:#53636f;font-size:.74rem;line-height:1.5}
+.urban-planning-v50 .up-v50-image-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.urban-planning-v50 .up-v50-image-strip figure{margin:0;overflow:hidden;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v50 .up-v50-image-strip img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.urban-planning-v50 .up-v50-image-strip figcaption{padding:7px 9px;color:#405767;font-size:.67rem;font-weight:760}
+.urban-planning-v50 .up-v50-video-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.urban-planning-v50 .up-v50-video-gallery a{display:grid;grid-template-columns:140px 1fr;min-height:92px;overflow:hidden;border:1px solid #cfc7b9;background:#fffdf9;color:#17354c;text-decoration:none}
+.urban-planning-v50 .up-v50-video-gallery img{display:block;width:100%;height:100%;min-height:92px;object-fit:cover}
+.urban-planning-v50 .up-v50-video-gallery span{display:flex;flex-direction:column;justify-content:center;padding:10px}
+.urban-planning-v50 .up-v50-video-gallery b{font-size:.76rem;line-height:1.35}
+.urban-planning-v50 .up-v50-video-gallery small{margin-top:5px;color:#a56c16;font-size:.65rem;font-weight:800}
+.urban-planning-v50 .up-v50-map-section{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);gap:16px;margin-top:4px;padding:18px 0;border-top:2px solid #17354c;border-bottom:1px solid #cec6b8}
+.urban-planning-v50 .up-v50-map-copy{padding:14px 15px;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v50 .up-v50-map-copy p{margin:8px 0 0;color:#566670;font-size:.78rem;line-height:1.5}
+.urban-planning-v50 .up-v50-map-buttons{display:grid;gap:7px;margin-top:13px}
+.urban-planning-v50 .up-v50-map-buttons button{padding:9px 10px;border:1px solid #d4ccbf;background:#faf8f2;color:#17354c;text-align:left;font:inherit;font-size:.72rem;font-weight:780;cursor:pointer}
+.urban-planning-v50 .up-v50-map-buttons button.active{background:#17354c;border-color:#17354c;color:#fff}
+.urban-planning-v50 .up-v50-map-summary{margin-top:12px;padding-top:10px;border-top:1px solid #d8d0c3;color:#52636f;font-size:.73rem;line-height:1.48}
+.urban-planning-v50 .up-v50-map{height:330px;border:1px solid #cfc7b9;background:#e8ecef}
+.urban-planning-v50 .up-v50-map .leaflet-bottom{display:none!important}
+.urban-planning-v50 .up-v50-professor-summary{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:start;padding:15px 0;border-bottom:1px solid #cec6b8}
+.urban-planning-v50 .up-v50-professor-summary strong{color:#a56c16;font-size:.7rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.urban-planning-v50 .up-v50-professor-summary p{margin:0;color:#53636f;font-size:.82rem;line-height:1.55}
+@media(max-width:1000px){
+ .urban-planning-v50 .up-v50-hero,.urban-planning-v50 .up-v50-project-head,.urban-planning-v50 .up-v50-traffic-grid,.urban-planning-v50 .up-v50-landscape-grid,.urban-planning-v50 .up-v50-map-section{grid-template-columns:1fr}
+ .urban-planning-v50 .up-v50-tools,.urban-planning-v50 .up-v50-project-meta{justify-content:flex-start}
+ .urban-planning-v50 .up-v50-video-gallery{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+ .urban-planning-v50 .up-shell{width:min(calc(100% - 22px),1180px);padding-top:16px}
+ .urban-planning-v50 .up-v50-capabilities,.urban-planning-v50 .up-v50-flow,.urban-planning-v50 .up-v50-role-grid,.urban-planning-v50 .up-v50-interventions,.urban-planning-v50 .up-v50-image-strip{grid-template-columns:1fr}
+ .urban-planning-v50 .up-v50-capabilities>div{border-right:0;border-bottom:1px solid #d5cdc0}
+ .urban-planning-v50 .up-v50-capabilities>div:last-child{border-bottom:0}
+ .urban-planning-v50 .up-v50-video-gallery a{grid-template-columns:120px 1fr}
+ .urban-planning-v50 .up-v50-professor-summary{grid-template-columns:1fr;gap:7px}
+ .urban-planning-v50 .up-v50-map{height:260px}
+}
+
+/* v51 — simplified creative story-map style */
+.urban-planning-v51{background:#f3f0e8;color:#132b3f}
+.urban-planning-v51 .up-shell{width:min(calc(100% - 36px),1180px);padding:22px 0 44px}
+.urban-planning-v51 .up-breadcrumbs{margin-bottom:16px}
+.urban-planning-v51 .up-v51-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:24px;align-items:end;padding-bottom:18px;border-bottom:1px solid #d7d0c3}
+.urban-planning-v51 .up-v51-intro h1{margin:8px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,4vw,3.55rem);line-height:1;letter-spacing:-.03em;color:#132b3f}
+.urban-planning-v51 .up-v51-intro p{max-width:760px;margin:12px 0 0;color:#53636e;font-size:.92rem;line-height:1.65}
+.urban-planning-v51 .up-v51-chipwrap{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.urban-planning-v51 .up-v51-chipwrap span,.urban-planning-v51 .up-v51-keywords span,.urban-planning-v51 .up-v51-inline-note{padding:7px 10px;border:1px solid #d4ccbf;border-radius:999px;background:#fbfaf6;color:#3f5869;font-size:.69rem;font-weight:760}
+.urban-planning-v51 .up-v51-context{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:16px;margin-top:18px}
+.urban-planning-v51 .up-v51-map-panel,.urban-planning-v51 .up-v51-place-panel,.urban-planning-v51 .up-v51-story-card{border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v51 .up-v51-panel-head{display:flex;justify-content:space-between;gap:16px;align-items:end;padding:14px 16px 10px;border-bottom:1px solid #ddd5c8;background:#faf8f2}
+.urban-planning-v51 .up-v51-panel-head h2,.urban-planning-v51 .up-v51-story-head h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,2vw,1.9rem);line-height:1.1;color:#132b3f}
+.urban-planning-v51 .up-v51-panel-head p,.urban-planning-v51 .up-v51-story-head p{margin:0;max-width:420px;color:#566670;font-size:.8rem;line-height:1.52}
+.urban-planning-v51 .up-v51-map{height:320px}
+.urban-planning-v51 .up-v51-map .leaflet-bottom{display:none!important}
+.urban-planning-v51 .up-v51-map .leaflet-control-zoom{margin:10px}
+.urban-planning-v51 .up-v51-map .leaflet-bar{box-shadow:none;border:1px solid #d8d0c3}
+.urban-planning-v51 .up-v51-map .leaflet-bar a{width:24px;height:24px;line-height:24px;color:#17354c}
+.urban-planning-v51 .up-v51-place-panel{display:grid;gap:10px;padding:12px}
+.urban-planning-v51 .up-v51-place{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;padding:12px;border:1px solid #d8d0c3;background:#faf8f2;text-align:left;cursor:pointer;font:inherit}
+.urban-planning-v51 .up-v51-place.active{border-color:#17354c;background:#fff}
+.urban-planning-v51 .up-v51-place-no{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#17354c;color:#fff;font-size:.88rem;font-weight:900}
+.urban-planning-v51 .up-v51-place strong{display:block;color:#17354c;font-size:.92rem}
+.urban-planning-v51 .up-v51-place p{margin:5px 0 0;color:#586974;font-size:.76rem;line-height:1.5}
+.urban-planning-v51 .up-v51-map-summary{padding:2px 4px 0;color:#52636f;font-size:.76rem;line-height:1.5}
+.urban-planning-v51 .up-v51-story{display:grid;gap:16px;margin-top:18px}
+.urban-planning-v51 .up-v51-story-card{padding:16px}
+.urban-planning-v51 .up-v51-story-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.8fr);gap:16px;align-items:end;margin-bottom:14px}
+.urban-planning-v51 .up-v51-story-grid,.urban-planning-v51 .up-v51-landscape-grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(340px,.96fr);gap:16px;align-items:start}
+.urban-planning-v51 .up-v51-video{position:relative;display:block;overflow:hidden;min-height:320px;background:#0f1d28;color:#fff;text-decoration:none}
+.urban-planning-v51 .up-v51-video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,15,24,.06),rgba(4,15,24,.12) 55%,rgba(4,15,24,.72))}
+.urban-planning-v51 .up-v51-video img{display:block;width:100%;height:100%;min-height:320px;object-fit:cover}
+.urban-planning-v51 .up-v51-video-tag,.urban-planning-v51 .up-v51-video-link,.urban-planning-v51 .up-v51-video-play{position:absolute;z-index:2}
+.urban-planning-v51 .up-v51-video-tag{left:14px;top:14px;padding:6px 9px;border:1px solid rgba(255,255,255,.55);background:rgba(15,29,40,.84);font-size:.64rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v51 .up-v51-video-link{left:16px;bottom:14px;font-size:.78rem;font-weight:850}
+.urban-planning-v51 .up-v51-video-play{left:50%;top:50%;width:66px;height:46px;border-radius:12px;background:#ff0033;transform:translate(-50%,-50%);box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.urban-planning-v51 .up-v51-video-play::after{content:"";position:absolute;left:27px;top:13px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:17px solid #fff}
+.urban-planning-v51 .up-v51-story-copy{display:grid;gap:12px}
+.urban-planning-v51 .up-v51-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.urban-planning-v51 .up-v51-two-col{grid-template-columns:1fr 1fr}
+.urban-planning-v51 .up-v51-mini-grid>div{padding:11px;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v51 .up-v51-mini-grid span{display:block;color:#a56c16;font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v51 .up-v51-mini-grid strong{display:block;margin-top:5px;color:#17354c;font-size:.8rem;line-height:1.38}
+.urban-planning-v51 .up-v51-story-copy ul{margin:0;padding-left:18px;color:#4b5e6b;font-size:.8rem;line-height:1.57}
+.urban-planning-v51 .up-v51-story-copy li+li{margin-top:4px}
+.urban-planning-v51 .up-v51-inline-note{justify-self:start}
+.urban-planning-v51 .up-v51-main-visual{margin:0;overflow:hidden;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v51 .up-v51-main-visual img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}
+.urban-planning-v51 .up-v51-shorttext{margin:0;color:#546671;font-size:.79rem;line-height:1.56}
+.urban-planning-v51 .up-v51-keywords{display:flex;flex-wrap:wrap;gap:8px}
+.urban-planning-v51 .up-v51-media-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.urban-planning-v51 .up-v51-media-row figure{margin:0;overflow:hidden;border:1px solid #d8d0c3;background:#fff}
+.urban-planning-v51 .up-v51-media-row img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.urban-planning-v51 .up-v51-media-row figcaption{padding:7px 9px;color:#405767;font-size:.67rem;font-weight:760}
+.urban-planning-v51 .up-v51-youtube-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.urban-planning-v51 .up-v51-youtube-row a{display:block;overflow:hidden;border:1px solid #d8d0c3;background:#fff;color:#17354c;text-decoration:none}
+.urban-planning-v51 .up-v51-youtube-row img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.urban-planning-v51 .up-v51-youtube-row span{display:block;padding:9px 10px;font-size:.74rem;font-weight:780}
+.urban-planning-v51 .up-code-link{justify-self:start}
+@media(max-width:1000px){
+ .urban-planning-v51 .up-v51-intro,.urban-planning-v51 .up-v51-context,.urban-planning-v51 .up-v51-story-head,.urban-planning-v51 .up-v51-story-grid,.urban-planning-v51 .up-v51-landscape-grid{grid-template-columns:1fr}
+ .urban-planning-v51 .up-v51-chipwrap{justify-content:flex-start}
+}
+@media(max-width:720px){
+ .urban-planning-v51 .up-shell{width:min(calc(100% - 22px),1180px);padding-top:16px}
+ .urban-planning-v51 .up-v51-mini-grid,.urban-planning-v51 .up-v51-two-col,.urban-planning-v51 .up-v51-media-row,.urban-planning-v51 .up-v51-youtube-row{grid-template-columns:1fr}
+ .urban-planning-v51 .up-v51-map{height:260px}
+}
+
+
+/* v52 — right-side story map with scroll-linked zoom */
+.urban-planning-v52{background:#f3f0e8;color:#132b3f}
+.urban-planning-v52 .up-shell{width:min(calc(100% - 36px),1180px);padding:22px 0 44px}
+.urban-planning-v52 .up-breadcrumbs{margin-bottom:16px}
+.urban-planning-v52 .up-v51-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:24px;align-items:end;padding-bottom:18px;border-bottom:1px solid #d7d0c3}
+.urban-planning-v52 .up-v51-intro h1{margin:8px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,4vw,3.55rem);line-height:1;letter-spacing:-.03em;color:#132b3f}
+.urban-planning-v52 .up-v51-intro p{max-width:760px;margin:12px 0 0;color:#53636e;font-size:.92rem;line-height:1.65}
+.urban-planning-v52 .up-v51-chipwrap{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.urban-planning-v52 .up-v51-chipwrap span,.urban-planning-v52 .up-v51-keywords span,.urban-planning-v52 .up-v51-inline-note{padding:7px 10px;border:1px solid #d4ccbf;border-radius:999px;background:#fbfaf6;color:#3f5869;font-size:.69rem;font-weight:760}
+.urban-planning-v52 .up-v52-storymap{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:18px;margin-top:18px;align-items:start}
+.urban-planning-v52 .up-v52-narrative{display:grid;gap:16px}
+.urban-planning-v52 .up-v52-place-panel,.urban-planning-v52 .up-v52-sticky-map,.urban-planning-v52 .up-v52-story-card{border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v52 .up-v52-place-panel{padding:12px}
+.urban-planning-v52 .up-v52-panel-head{padding:2px 2px 10px}
+.urban-planning-v52 .up-v52-panel-head h2,.urban-planning-v52 .up-v51-story-head h2,.urban-planning-v52 .up-v52-map-head h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,2vw,1.9rem);line-height:1.1;color:#132b3f}
+.urban-planning-v52 .up-v52-panel-head p,.urban-planning-v52 .up-v51-story-head p,.urban-planning-v52 .up-v52-map-head p{margin:6px 0 0;color:#566670;font-size:.8rem;line-height:1.52}
+.urban-planning-v52 .up-v52-place{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;width:100%;padding:12px;border:1px solid #d8d0c3;background:#faf8f2;text-align:left;cursor:pointer;font:inherit}
+.urban-planning-v52 .up-v52-place + .up-v52-place{margin-top:10px}
+.urban-planning-v52 .up-v52-place.active{border-color:#17354c;background:#fff}
+.urban-planning-v52 .up-v52-place-no{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#17354c;color:#fff;font-size:.88rem;font-weight:900}
+.urban-planning-v52 .up-v52-place strong{display:block;color:#17354c;font-size:.92rem}
+.urban-planning-v52 .up-v52-place p{margin:5px 0 0;color:#586974;font-size:.76rem;line-height:1.5}
+.urban-planning-v52 .up-v52-map-summary{margin-top:10px;padding-top:10px;border-top:1px solid #ddd5c8;color:#52636f;font-size:.76rem;line-height:1.5}
+.urban-planning-v52 .up-v52-map-aside{position:relative}
+.urban-planning-v52 .up-v52-sticky-map{position:sticky;top:98px;overflow:hidden}
+.urban-planning-v52 .up-v52-map-head{padding:14px 16px 10px;border-bottom:1px solid #ddd5c8;background:#faf8f2}
+.urban-planning-v52 .up-v52-map{height:520px}
+.urban-planning-v52 .up-v52-map .leaflet-bottom{display:none!important}
+.urban-planning-v52 .up-v52-map .leaflet-control-zoom{margin:10px}
+.urban-planning-v52 .up-v52-map .leaflet-bar{box-shadow:none;border:1px solid #d8d0c3}
+.urban-planning-v52 .up-v52-map .leaflet-bar a{width:24px;height:24px;line-height:24px;color:#17354c}
+.urban-planning-v52 .up-v52-story-stack{display:grid;gap:16px}
+.urban-planning-v52 .up-v52-story-card{padding:16px}
+.urban-planning-v52 .up-v51-story-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.8fr);gap:16px;align-items:end;margin-bottom:14px}
+.urban-planning-v52 .up-v51-story-grid,.urban-planning-v52 .up-v51-landscape-grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(340px,.96fr);gap:16px;align-items:start}
+.urban-planning-v52 .up-v51-video{position:relative;display:block;overflow:hidden;min-height:320px;background:#0f1d28;color:#fff;text-decoration:none}
+.urban-planning-v52 .up-v51-video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,15,24,.06),rgba(4,15,24,.12) 55%,rgba(4,15,24,.72))}
+.urban-planning-v52 .up-v51-video img{display:block;width:100%;height:100%;min-height:320px;object-fit:cover}
+.urban-planning-v52 .up-v51-video-tag,.urban-planning-v52 .up-v51-video-link,.urban-planning-v52 .up-v51-video-play{position:absolute;z-index:2}
+.urban-planning-v52 .up-v51-video-tag{left:14px;top:14px;padding:6px 9px;border:1px solid rgba(255,255,255,.55);background:rgba(15,29,40,.84);font-size:.64rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v52 .up-v51-video-link{left:16px;bottom:14px;font-size:.78rem;font-weight:850}
+.urban-planning-v52 .up-v51-video-play{left:50%;top:50%;width:66px;height:46px;border-radius:12px;background:#ff0033;transform:translate(-50%,-50%);box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.urban-planning-v52 .up-v51-video-play::after{content:"";position:absolute;left:27px;top:13px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:17px solid #fff}
+.urban-planning-v52 .up-v51-story-copy{display:grid;gap:12px}
+.urban-planning-v52 .up-v51-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.urban-planning-v52 .up-v51-two-col{grid-template-columns:1fr 1fr}
+.urban-planning-v52 .up-v51-mini-grid>div{padding:11px;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v52 .up-v51-mini-grid span{display:block;color:#a56c16;font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v52 .up-v51-mini-grid strong{display:block;margin-top:5px;color:#17354c;font-size:.8rem;line-height:1.38}
+.urban-planning-v52 .up-v51-story-copy ul{margin:0;padding-left:18px;color:#4b5e6b;font-size:.8rem;line-height:1.57}
+.urban-planning-v52 .up-v51-story-copy li+li{margin-top:4px}
+.urban-planning-v52 .up-v51-inline-note{justify-self:start}
+.urban-planning-v52 .up-v51-main-visual{margin:0;overflow:hidden;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v52 .up-v51-main-visual img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}
+.urban-planning-v52 .up-v51-shorttext{margin:0;color:#546671;font-size:.79rem;line-height:1.56}
+.urban-planning-v52 .up-v51-keywords{display:flex;flex-wrap:wrap;gap:8px}
+.urban-planning-v52 .up-v51-media-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.urban-planning-v52 .up-v51-media-row figure{margin:0;overflow:hidden;border:1px solid #d8d0c3;background:#fff}
+.urban-planning-v52 .up-v51-media-row img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.urban-planning-v52 .up-v51-media-row figcaption{padding:7px 9px;color:#405767;font-size:.67rem;font-weight:760}
+.urban-planning-v52 .up-v51-youtube-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.urban-planning-v52 .up-v51-youtube-row a{display:block;overflow:hidden;border:1px solid #d8d0c3;background:#fff;color:#17354c;text-decoration:none}
+.urban-planning-v52 .up-v51-youtube-row img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.urban-planning-v52 .up-v51-youtube-row span{display:block;padding:9px 10px;font-size:.74rem;font-weight:780}
+.urban-planning-v52 .up-code-link{justify-self:start}
+@media(max-width:1100px){
+ .urban-planning-v52 .up-v52-storymap{grid-template-columns:1fr}
+ .urban-planning-v52 .up-v52-sticky-map{position:relative;top:auto}
+ .urban-planning-v52 .up-v52-map{height:340px}
+}
+@media(max-width:1000px){
+ .urban-planning-v52 .up-v51-intro,.urban-planning-v52 .up-v51-story-head,.urban-planning-v52 .up-v51-story-grid,.urban-planning-v52 .up-v51-landscape-grid{grid-template-columns:1fr}
+ .urban-planning-v52 .up-v51-chipwrap{justify-content:flex-start}
+}
+@media(max-width:720px){
+ .urban-planning-v52 .up-shell{width:min(calc(100% - 22px),1180px);padding-top:16px}
+ .urban-planning-v52 .up-v51-mini-grid,.urban-planning-v52 .up-v51-two-col,.urban-planning-v52 .up-v51-media-row,.urban-planning-v52 .up-v51-youtube-row{grid-template-columns:1fr}
+ .urban-planning-v52 .up-v52-map{height:260px}
+}
+
+/* v53 — true right-side sticky story map; location selector removed */
+.urban-planning-v53{background:#f3f0e8;color:#132b3f}
+.urban-planning-v53 .up-shell{width:min(calc(100% - 36px),1220px);padding:22px 0 44px;overflow:visible}
+.urban-planning-v53 .up-breadcrumbs{margin-bottom:16px}
+.urban-planning-v53 .up-v53-intro{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:24px;align-items:end;padding-bottom:18px;border-bottom:1px solid #d7d0c3}
+.urban-planning-v53 .up-v53-intro h1{margin:8px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,4vw,3.55rem);line-height:1;letter-spacing:-.03em;color:#132b3f}
+.urban-planning-v53 .up-v53-intro p{max-width:760px;margin:12px 0 0;color:#53636e;font-size:.92rem;line-height:1.65}
+.urban-planning-v53 .up-v53-chipwrap{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.urban-planning-v53 .up-v53-chipwrap span,.urban-planning-v53 .up-v53-keywords span,.urban-planning-v53 .up-v53-inline-note{padding:7px 10px;border:1px solid #d4ccbf;border-radius:999px;background:#fbfaf6;color:#3f5869;font-size:.69rem;font-weight:760}
+.urban-planning-v53 .up-v53-storymap{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,420px);gap:18px;margin-top:18px;align-items:stretch;overflow:visible}
+.urban-planning-v53 .up-v53-story-column{display:grid;gap:18px;min-width:0}
+.urban-planning-v53 .up-v53-story-card{padding:16px;border:1px solid #cfc7b9;background:#fffdf9;scroll-margin-top:110px}
+.urban-planning-v53 .up-v53-story-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.78fr);gap:16px;align-items:end;margin-bottom:14px}
+.urban-planning-v53 .up-v53-story-head h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,2vw,1.9rem);line-height:1.1;color:#132b3f}
+.urban-planning-v53 .up-v53-story-head p{margin:0;color:#566670;font-size:.8rem;line-height:1.52}
+.urban-planning-v53 .up-v53-story-grid,.urban-planning-v53 .up-v53-landscape-grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(330px,.96fr);gap:16px;align-items:start}
+.urban-planning-v53 .up-v53-video{position:relative;display:block;overflow:hidden;min-height:310px;background:#0f1d28;color:#fff;text-decoration:none}
+.urban-planning-v53 .up-v53-video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,15,24,.06),rgba(4,15,24,.12) 55%,rgba(4,15,24,.72))}
+.urban-planning-v53 .up-v53-video img{display:block;width:100%;height:100%;min-height:310px;object-fit:cover}
+.urban-planning-v53 .up-v53-video-tag,.urban-planning-v53 .up-v53-video-link,.urban-planning-v53 .up-v53-video-play{position:absolute;z-index:2}
+.urban-planning-v53 .up-v53-video-tag{left:14px;top:14px;padding:6px 9px;border:1px solid rgba(255,255,255,.55);background:rgba(15,29,40,.84);font-size:.64rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v53 .up-v53-video-link{left:16px;bottom:14px;font-size:.78rem;font-weight:850}
+.urban-planning-v53 .up-v53-video-play{left:50%;top:50%;width:66px;height:46px;border-radius:12px;background:#ff0033;transform:translate(-50%,-50%);box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.urban-planning-v53 .up-v53-video-play::after{content:"";position:absolute;left:27px;top:13px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:17px solid #fff}
+.urban-planning-v53 .up-v53-copy{display:grid;gap:12px}
+.urban-planning-v53 .up-v53-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.urban-planning-v53 .up-v53-two-col{grid-template-columns:1fr 1fr}
+.urban-planning-v53 .up-v53-mini-grid>div{padding:11px;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v53 .up-v53-mini-grid span{display:block;color:#a56c16;font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v53 .up-v53-mini-grid strong{display:block;margin-top:5px;color:#17354c;font-size:.8rem;line-height:1.38}
+.urban-planning-v53 .up-v53-copy ul{margin:0;padding-left:18px;color:#4b5e6b;font-size:.8rem;line-height:1.57}
+.urban-planning-v53 .up-v53-copy li+li{margin-top:4px}
+.urban-planning-v53 .up-v53-inline-note{justify-self:start}
+.urban-planning-v53 .up-v53-main-visual{margin:0;overflow:hidden;border:1px solid #d8d0c3;background:#faf8f2}
+.urban-planning-v53 .up-v53-main-visual img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}
+.urban-planning-v53 .up-v53-shorttext{margin:0;color:#546671;font-size:.79rem;line-height:1.56}
+.urban-planning-v53 .up-v53-keywords{display:flex;flex-wrap:wrap;gap:8px}
+.urban-planning-v53 .up-v53-media-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.urban-planning-v53 .up-v53-media-row figure{margin:0;overflow:hidden;border:1px solid #d8d0c3;background:#fff}
+.urban-planning-v53 .up-v53-media-row img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.urban-planning-v53 .up-v53-media-row figcaption{padding:7px 9px;color:#405767;font-size:.67rem;font-weight:760}
+.urban-planning-v53 .up-v53-youtube-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.urban-planning-v53 .up-v53-youtube-row a{display:block;overflow:hidden;border:1px solid #d8d0c3;background:#fff;color:#17354c;text-decoration:none}
+.urban-planning-v53 .up-v53-youtube-row img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.urban-planning-v53 .up-v53-youtube-row span{display:block;padding:9px 10px;font-size:.74rem;font-weight:780}
+.urban-planning-v53 .up-v53-map-column{position:relative;align-self:stretch;min-width:0;overflow:visible}
+.urban-planning-v53 .up-v53-map-sticky{position:sticky;top:78px;height:calc(100vh - 96px);min-height:520px;max-height:760px;display:flex;flex-direction:column;overflow:hidden;border:1px solid #cfc7b9;background:#fffdf9}
+.urban-planning-v53 .up-v53-map-status{display:grid;grid-template-columns:38px 1fr;gap:10px;align-items:center;padding:11px 12px;border-bottom:1px solid #ddd5c8;background:#faf8f2}
+.urban-planning-v53 .up-v53-map-status>span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#17354c;color:#fff;font-size:.8rem;font-weight:900}
+.urban-planning-v53 .up-v53-map-status strong{display:block;color:#17354c;font-size:.86rem}
+.urban-planning-v53 .up-v53-map-status small{display:block;margin-top:3px;color:#60707a;font-size:.67rem;line-height:1.35}
+.urban-planning-v53 .up-v53-map{flex:1;min-height:0;width:100%}
+.urban-planning-v53 .up-v53-map .leaflet-bottom{display:none!important}
+.urban-planning-v53 .up-v53-map .leaflet-control-zoom{margin:10px}
+.urban-planning-v53 .up-v53-map .leaflet-bar{box-shadow:none;border:1px solid #d8d0c3}
+.urban-planning-v53 .up-v53-map .leaflet-bar a{width:24px;height:24px;line-height:24px;color:#17354c}
+.urban-planning-v53 .up-code-link{justify-self:start}
+@media(max-width:1080px){
+ .urban-planning-v53 .up-v53-storymap{grid-template-columns:1fr}
+ .urban-planning-v53 .up-v53-map-column{order:-1}
+ .urban-planning-v53 .up-v53-map-sticky{position:relative;top:auto;height:340px;min-height:340px;max-height:none}
+}
+@media(max-width:900px){
+ .urban-planning-v53 .up-v53-intro,.urban-planning-v53 .up-v53-story-head,.urban-planning-v53 .up-v53-story-grid,.urban-planning-v53 .up-v53-landscape-grid{grid-template-columns:1fr}
+ .urban-planning-v53 .up-v53-chipwrap{justify-content:flex-start}
+}
+@media(max-width:720px){
+ .urban-planning-v53 .up-shell{width:min(calc(100% - 22px),1220px);padding-top:16px}
+ .urban-planning-v53 .up-v53-mini-grid,.urban-planning-v53 .up-v53-two-col,.urban-planning-v53 .up-v53-media-row,.urban-planning-v53 .up-v53-youtube-row{grid-template-columns:1fr}
+ .urban-planning-v53 .up-v53-map-sticky{height:270px;min-height:270px}
+}
+
+
+/* v56 — targeted fixes only; preserves the v53 layout */
+.urban-planning-v53.urban-planning-fixes-v56 .up-shell{padding-top:14px}
+.urban-planning-v53.urban-planning-fixes-v56 .up-breadcrumbs{margin-bottom:10px}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-intro{gap:20px;padding-bottom:11px}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-intro h1{margin-top:4px;font-size:clamp(1.95rem,3.2vw,2.85rem);line-height:1.02;letter-spacing:-.025em}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-intro p{margin-top:7px;max-width:720px;font-size:.86rem;line-height:1.5}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-chipwrap{gap:6px;align-content:center}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-chipwrap span{padding:6px 9px;font-size:.66rem}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-storymap{margin-top:13px}
+
+/* Stable fixed map geometry prevents layout movement while Leaflet and tiles initialize. */
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-map-sticky{height:620px;min-height:620px;max-height:620px;contain:layout paint;transform:translateZ(0)}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-map{height:100%;min-height:0}
+
+/* RMC/RMCH cards keep the original three-column row, with clear video cues. */
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-youtube-row .up-v56-rmc-video{position:relative;display:block;overflow:hidden;min-height:150px;background:#0f1d28;color:#fff;text-decoration:none}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-youtube-row .up-v56-rmc-video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,15,24,.06),rgba(4,15,24,.12) 50%,rgba(4,15,24,.78));pointer-events:none}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-youtube-row .up-v56-rmc-video img{display:block;width:100%;height:100%;min-height:150px;aspect-ratio:16/9;object-fit:cover;transition:transform .2s ease}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-youtube-row .up-v56-rmc-video:hover img{transform:scale(1.015)}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v56-video-tag,
+.urban-planning-v53.urban-planning-fixes-v56 .up-v56-video-play,
+.urban-planning-v53.urban-planning-fixes-v56 .up-v56-video-link{position:absolute;z-index:2}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v56-video-tag{left:10px;top:10px;padding:5px 7px;border:1px solid rgba(255,255,255,.58);background:rgba(15,29,40,.82);color:#fff;font-size:.56rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v56-video-play{left:50%;top:48%;width:54px;height:38px;border-radius:10px;background:#ff0033;transform:translate(-50%,-50%);box-shadow:0 8px 22px rgba(0,0,0,.28)}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v56-video-play::after{content:"";position:absolute;left:22px;top:10px;border-top:9px solid transparent;border-bottom:9px solid transparent;border-left:15px solid #fff}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v56-video-link{left:11px;right:11px;bottom:10px;color:#fff;font-size:.67rem;font-weight:820;line-height:1.35;text-shadow:0 1px 4px rgba(0,0,0,.58)}
+
+@media(max-width:1100px){
+ .urban-planning-v53.urban-planning-fixes-v56 .up-v53-map-sticky{height:340px;min-height:340px;max-height:none}
+}
+@media(max-width:720px){
+ .urban-planning-v53.urban-planning-fixes-v56 .up-shell{padding-top:11px}
+ .urban-planning-v53.urban-planning-fixes-v56 .up-v53-intro h1{font-size:1.95rem}
+ .urban-planning-v53.urban-planning-fixes-v56 .up-v53-map-sticky{height:270px;min-height:270px}
+ .urban-planning-v53.urban-planning-fixes-v56 .up-v53-youtube-row .up-v56-rmc-video,
+ .urban-planning-v53.urban-planning-fixes-v56 .up-v53-youtube-row .up-v56-rmc-video img{min-height:190px}
+}
+
+
+/* v57 — slower map movement and added night-view image */
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-media-row{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));align-items:stretch}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-media-row figure{display:flex;flex-direction:column}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-media-row img{flex:1}
+
+
+/* v58 — fuller RMC gallery with two complete rows */
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-media-row{grid-template-columns:repeat(4,1fr);align-items:stretch}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-media-row figure{display:flex;flex-direction:column;min-height:100%}
+.urban-planning-v53.urban-planning-fixes-v56 .up-v53-media-row img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;flex:none}
+@media(max-width:720px){
+ .urban-planning-v53.urban-planning-fixes-v56 .up-v53-media-row{grid-template-columns:1fr 1fr}
+}

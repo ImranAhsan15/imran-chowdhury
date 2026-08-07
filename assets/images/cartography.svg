@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500">
+  <rect width="640" height="500" fill="#091b26"/>
+  <g transform="translate(52 90)">
+    <rect x="0" y="0" width="160" height="310" rx="16" fill="#112e3a" stroke="#2d5c64"/>
+    <rect x="188" y="0" width="160" height="310" rx="16" fill="#112e3a" stroke="#2d5c64"/>
+    <rect x="376" y="0" width="160" height="310" rx="16" fill="#112e3a" stroke="#2d5c64"/>
+    <g fill="none" stroke-linecap="round"><path d="M15 260C58 210 76 172 112 133s38-77 55-123" stroke="#55d6be" stroke-width="13"/><path d="M-5 130c49 1 83-14 121-54" stroke="#f2c77d" stroke-width="7"/><path d="M32 308c31-69 58-65 83-137" stroke="#7eb6c6" stroke-width="6"/></g>
+    <g fill="none" stroke-linecap="round"><path d="M202 260C245 210 263 172 299 133s38-77 55-123" stroke="#55d6be" stroke-width="9"/><path d="M183 130c49 1 83-14 121-54" stroke="#f2c77d" stroke-width="5"/></g>
+    <g fill="none" stroke-linecap="round"><path d="M389 260C432 210 450 172 486 133s38-77 55-123" stroke="#55d6be" stroke-width="5"/></g>
+    <g fill="#dffaf4" font-family="Arial,sans-serif" font-size="14" font-weight="700"><text x="45" y="338">1:10K</text><text x="235" y="338">1:50K</text><text x="425" y="338">1:100K</text></g>
+  </g>
+  <text x="40" y="50" fill="#e8fbf7" font-family="Arial,sans-serif" font-size="24" font-weight="800">SCALE-AWARE CARTOGRAPHY</text>
+</svg>

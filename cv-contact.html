@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Academic contact information, research interests, location, and CV for Shah Imran Ahsan Chowdhury." name="description"/>
+<meta content="#182f49" name="theme-color"/>
+<link href="assets/images/favicon.svg" rel="icon"/>
+<link href="assets/css/styles.css?v=20260802-contact-map-clean-v4" rel="stylesheet"/>
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+<title>Contact &amp; CV | Imran Chowdhury</title>
+<link href="assets/css/portfolio-audit.css?v=20260805-v34" rel="stylesheet"/><link href="assets/css/portfolio-refine-v35.css?v=20260805-v59" rel="stylesheet"/></head>
+<body class="compact-contact-page professor-contact-page">
+<header class="site-header" id="site-header"></header>
+<main>
+<section class="compact-contact-section">
+<div class="container compact-contact-container">
+<div class="compact-contact-heading professor-contact-heading">
+<div>
+<span class="eyebrow">Academic contact</span>
+<h1>Contact &amp; CV</h1>
+</div>
+<div class="professor-contact-intro">
+<p>For PhD supervision discussions, research collaboration, and academic or professional correspondence.</p>
+<div aria-label="Primary contact actions" class="professor-quick-actions">
+<a class="button professor-primary-action" href="mailto:imran.chowdhury2804@gmail.com?subject=Academic%20or%20PhD%20Inquiry">Email Imran</a>
+<a class="button secondary" href="assets/documents/Imran_Chowdhury_Academic_CV.pdf" rel="noopener" target="_blank">Open Academic CV</a>
+</div>
+</div>
+</div>
+<div aria-label="Research profile summary" class="professor-fit-strip">
+<div>
+<span class="professor-strip-label">Research focus</span>
+<strong>GeoAI · Remote Sensing · UAV Mapping · GIS Automation · Urban &amp; Environmental Applications</strong>
+</div>
+<a class="text-link professor-research-link" href="research.html">Explore research →</a>
+</div>
+<div class="compact-contact-layout professor-contact-layout">
+<div class="compact-location-column">
+<div class="compact-map-title">
+<span>Location overview</span>
+<strong>Dhaka, Bangladesh</strong>
+</div>
+<div aria-label="Map showing home base and Esri Bangladesh office in Dhaka" class="compact-contact-map" id="contact-map"></div>
+</div>
+<div aria-label="Contact and address information" class="compact-contact-details professor-contact-details">
+<section class="professor-contact-row professor-email-row">
+<p class="compact-address-label">Email</p>
+<div class="professor-email-list">
+<a href="mailto:imran.chowdhury2804@gmail.com">imran.chowdhury2804@gmail.com</a>
+<a href="mailto:c.imran@esrisa.com">c.imran@esrisa.com</a>
+</div>
+</section>
+<section class="compact-address-row">
+<p class="compact-address-label">Home address</p>
+<div>
+<h2>Dhaka, Bangladesh</h2>
+<p class="professor-address-note">Personal base for academic correspondence.</p>
+</div>
+</section>
+<section class="compact-address-row">
+<p class="compact-address-label">Office address</p>
+<div>
+<h2>Esri Bangladesh</h2>
+<address>Level 16, Tower of Aakash<br/>54 Gulshan Avenue, Dhaka 1212<br/>Bangladesh</address>
+</div>
+</section>
+<section class="professor-resource-row">
+<p class="compact-address-label">Quick access</p>
+<nav aria-label="Academic profile links" class="professor-resource-links">
+<a href="education.html">Education</a>
+<a href="publications.html">Publications</a>
+<a href="skills-training.html">Expertise</a>
+</nav>
+</section>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/site-data.js?v=20260805-v35"></script>
+<script src="assets/js/site.js?v=20260805-v40"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    (function () {
+      const mapElement = document.getElementById('contact-map');
+      if (!mapElement) return;
+
+      if (!window.L) return;
+
+      const home = [23.8103, 90.4125];
+      const office = [23.7838, 90.4167];
+      const map = L.map(mapElement, {
+        scrollWheelZoom: false,
+        zoomControl: true,
+        attributionControl: true
+      });
+
+      const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+
+      const homeMarker = L.marker(home).addTo(map).bindPopup('<strong>Home base</strong><br>Dhaka, Bangladesh');
+      const officeMarker = L.marker(office).addTo(map).bindPopup('<strong>Office</strong><br>Esri Bangladesh<br>54 Gulshan Avenue, Dhaka 1212');
+      const group = L.featureGroup([homeMarker, officeMarker]);
+      map.fitBounds(group.getBounds().pad(0.65), { maxZoom: 12 });
+
+      setTimeout(function () { map.invalidateSize(); }, 100);
+    })();
+  </script>
+</body>
+</html>

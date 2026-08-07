@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+<title id="t">Land acquisition map automation</title><desc id="d">Strip selection, plot aggregation, area calculation and PDF map output.</desc>
+<rect width="900" height="560" fill="#f5f7fa"/><rect x="28" y="28" width="844" height="504" rx="24" fill="#fff" stroke="#d9e1ea" stroke-width="2"/>
+<g transform="translate(58 68)"><rect width="470" height="390" rx="18" fill="#eef3f8" stroke="#ccd8e5"/>
+<path d="M42 62h386M42 140h386M42 218h386M42 296h386M128 36v326M220 36v326M310 36v326" stroke="#c0cfdd" stroke-width="3"/>
+<path d="M84 40l60 322h82L166 40z" fill="#d8e5f0" stroke="#4c6d8d" stroke-width="5" opacity=".95"/>
+<circle cx="126" cy="120" r="10" fill="#355879"/><circle cx="155" cy="245" r="10" fill="#355879"/><circle cx="184" cy="326" r="10" fill="#355879"/>
+<path d="M250 95h142M250 122h112M250 173h142M250 200h96M250 250h142M250 277h126" stroke="#718ba4" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g transform="translate(576 92)"><rect width="248" height="330" rx="18" fill="#eef3f8" stroke="#ccd8e5"/>
+<rect x="30" y="32" width="188" height="122" rx="12" fill="#fff" stroke="#ccd8e5"/><path d="M50 56h148M50 82h110M50 108h132" stroke="#718ba4" stroke-width="7" stroke-linecap="round"/>
+<rect x="30" y="180" width="82" height="92" rx="12" fill="#fff" stroke="#ccd8e5"/><rect x="136" y="180" width="82" height="92" rx="12" fill="#fff" stroke="#ccd8e5"/>
+<text x="48" y="216" font-family="Arial" font-size="16" fill="#667f98">AREA</text><text x="48" y="249" font-family="Arial" font-size="24" font-weight="700" fill="#355879">ac</text>
+<path d="M154 210h46M154 232h46M154 254h32" stroke="#718ba4" stroke-width="6" stroke-linecap="round"/>
+<path d="M92 298h64" stroke="#355879" stroke-width="7" stroke-linecap="round"/><path d="M142 286l14 12-14 12" fill="none" stroke="#355879" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g></svg>

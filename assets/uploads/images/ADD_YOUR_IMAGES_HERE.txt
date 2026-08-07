@@ -1,0 +1,1 @@
+Copy public-safe photographs, maps, and research figures into this folder. Then reference them from the content editor.

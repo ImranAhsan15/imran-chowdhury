@@ -1,0 +1,36 @@
+/* Simple academic education page — v59 */
+.simple-education-page{background:#f3f0e8;color:#132b3f}
+.simple-education-page main{min-height:calc(100vh - 180px)}
+.education-simple-section{padding:24px 0 44px}
+.education-simple-shell{width:min(calc(100% - 36px),1120px);margin:0 auto}
+.education-breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:18px;color:#6b7880;font-size:.78rem}
+.education-breadcrumbs a{color:#17354c;font-weight:760;text-decoration:none}
+.education-simple-intro{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:34px;align-items:end;padding-bottom:18px;border-bottom:1px solid #cec6b8}
+.education-kicker{display:block;margin-bottom:6px;color:#a56c16;font-size:.69rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.education-simple-intro h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,3.6vw,3.25rem);line-height:1;letter-spacing:-.035em;color:#132b3f}
+.education-simple-intro>p{margin:0;max-width:700px;color:#53636e;font-size:.9rem;line-height:1.6}
+.education-degree-list{display:grid;gap:14px;margin-top:18px}
+.education-degree-card{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;padding:18px;border:1px solid #cfc7b9;background:#fffdf9}
+.education-degree-index{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#17354c;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:1rem;font-weight:800}
+.education-degree-main{min-width:0}
+.education-degree-topline{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:7px}
+.education-degree-topline span{color:#a56c16;font-size:.7rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.education-degree-topline strong{padding:5px 8px;border:1px solid #d7cfc2;background:#faf8f2;color:#17354c;font-size:.7rem}
+.education-degree-card h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,2.1vw,1.85rem);line-height:1.14;color:#132b3f}
+.education-institution{margin:5px 0 0;color:#566670;font-size:.84rem;font-weight:700}
+.education-degree-body{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px;padding-top:13px;border-top:1px solid #ddd5c8}
+.education-degree-body>div{padding:10px 11px;border:1px solid #ddd5c8;background:#faf8f2}
+.education-degree-body span{display:block;margin-bottom:5px;color:#a56c16;font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.education-degree-body p{margin:0;color:#4f616d;font-size:.78rem;line-height:1.54}
+.education-simple-footer{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px;margin-top:16px}
+.education-simple-footer a{display:inline-flex;align-items:center;padding:9px 12px;border:1px solid #17354c;background:#17354c;color:#fff;text-decoration:none;font-size:.72rem;font-weight:800}
+.education-simple-footer a+a{background:transparent;color:#17354c}
+@media(max-width:760px){
+ .education-simple-section{padding:18px 0 34px}
+ .education-simple-shell{width:min(calc(100% - 22px),1120px)}
+ .education-simple-intro,.education-degree-body{grid-template-columns:1fr;gap:10px}
+ .education-degree-card{grid-template-columns:1fr;padding:15px}
+ .education-degree-index{width:42px;height:42px}
+ .education-degree-topline{align-items:flex-start;flex-direction:column;gap:7px}
+ .education-simple-footer{justify-content:flex-start}
+}

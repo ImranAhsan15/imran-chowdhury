@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+<title id="t">Clip and Excel reporting workflow</title><desc id="d">Page polygon clipping land use data, calculating area, and exporting a spreadsheet.</desc>
+<rect width="900" height="560" fill="#f5f7fa"/><rect x="28" y="28" width="844" height="504" rx="24" fill="#fff" stroke="#d9e1ea" stroke-width="2"/>
+<g transform="translate(62 84)"><rect width="330" height="330" rx="18" fill="#eef3f8" stroke="#ccd8e5"/>
+<path d="M42 56h246M42 118h246M42 180h246M42 242h246M98 34v262M164 34v262M230 34v262" stroke="#c0cfdd" stroke-width="3"/>
+<path d="M44 92l244 116v58L44 150z" fill="#d9e7d9" stroke="#6e8b70" stroke-width="4"/><rect x="112" y="88" width="104" height="150" rx="6" fill="#d7e4f0" fill-opacity=".82" stroke="#355879" stroke-width="5"/>
+<path d="M136 112h56M136 140h56M136 168h56" stroke="#355879" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g transform="translate(435 202)"><path d="M0 0h74" stroke="#718ba4" stroke-width="8" stroke-linecap="round"/><path d="M58-15L76 0 58 15" fill="none" stroke="#355879" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g transform="translate(548 86)"><rect width="250" height="326" rx="18" fill="#eef3f8" stroke="#ccd8e5"/>
+<rect x="32" y="32" width="186" height="242" rx="12" fill="#fff" stroke="#ccd8e5"/><path d="M32 82h186M32 132h186M32 182h186M32 232h186M96 32v242M154 32v242" stroke="#c0cfdd" stroke-width="3"/>
+<text x="52" y="65" font-family="Arial" font-size="19" font-weight="700" fill="#355879">XLS</text><path d="M52 104h26M112 104h26M170 104h24M52 154h26M112 154h26M170 154h24" stroke="#718ba4" stroke-width="6" stroke-linecap="round"/>
+<path d="M84 296h82" stroke="#355879" stroke-width="7" stroke-linecap="round"/>
+</g></svg>

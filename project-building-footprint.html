@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Completed MSc research on object-level post-segmentation quality control for UAV-derived building footprints, with the manuscript currently under review in a Q1 journal." name="description"/>
+<meta content="#0f2744" name="theme-color"/>
+<link href="assets/images/favicon.svg" rel="icon"/>
+<link href="assets/css/styles.css?v=20260805-research-detail-v32" rel="stylesheet"/>
+<title>GeoAI-Based Building-Footprint Quality Control | Imran Chowdhury</title>
+<link href="assets/css/portfolio-audit.css?v=20260805-v34" rel="stylesheet"/><link href="assets/css/portfolio-refine-v35.css?v=20260805-v40" rel="stylesheet"/></head>
+<body class="academic-research-page compact-research-detail academic-detail-minimal research-detail-coherent" id="building-footprint-page">
+<header class="site-header" id="site-header"></header>
+<main>
+<section class="research-detail-intro">
+<div class="container">
+<div class="research-detail-intro-copy"><div class="academic-breadcrumbs"><a href="research.html">Research</a><span>/</span><span>Completed MSc Research</span></div><span class="research-detail-label">Completed research · GeoAI · UAV remote sensing</span><h1>GeoAI-Based Post-Segmentation Quality Control for UAV-Derived Building Footprints</h1><p class="research-detail-summary">Object-level quality control for UAV-derived building footprints before they are accepted into a GIS database.</p><dl aria-label="Research synopsis" class="research-detail-keylines"><div><dt>Research focus</dt><dd>Reliable post-segmentation quality control for building-footprint databases.</dd></div><div><dt>Methods &amp; data</dt><dd>UAV RGB imagery · U-Net · SAM-LoRA · vector regularization · geometric, contextual and raster features · machine learning.</dd></div><div><dt>Current stage</dt><dd>Completed · first-author manuscript under review in a Q1 journal.</dd></div></dl></div><figure class="research-detail-hero-visual research-detail-figure-minimal"><img alt="Illustrative examples of object-level segmentation errors used to motivate the quality-control framework." src="assets/images/research-detail/building-footprint-error-examples.jpg"/><figcaption class="research-detail-visual-caption">Illustrative examples of object-level segmentation errors used to motivate the quality-control framework.</figcaption></figure></div>
+</section>
+<section class="academic-paper-body"><div class="container research-detail-reading-shell"><details class="research-detail-disclosure"><summary>Research rationale and objectives</summary><div class="research-detail-disclosure-content"><section class="academic-section academic-abstract" id="overview">
+<p class="academic-section-label">Research overview</p>
+<p>U-Net and SAM-LoRA masks are vectorized, regularized and described by 24 geometric, contextual and raster features. Decision Tree, Random Trees and XGBoost screening is evaluated on a geographically independent test site.</p></section><section class="academic-section" id="motivation">
+<p class="academic-section-label">1. Research motivation</p>
+<h2>Why segmentation accuracy alone is insufficient</h2>
+<p>Pixel-level segmentation models can produce visually convincing building masks while still generating polygons that are fragmented, merged, distorted, incomplete, or contextually implausible. These errors become especially important when predicted masks are converted into operational GIS databases for urban planning, infrastructure management, exposure assessment, and spatial analysis.</p>
+<p>Conventional evaluation commonly emphasizes image-level or pixel-level performance. This research addresses the additional need for object-level quality assurance by examining the geometry, local spatial context, and underlying image characteristics of individual building-footprint candidates.</p>
+</section><section class="academic-section" id="objectives">
+<p class="academic-section-label">2. Research objectives</p>
+<h2>From segmentation output to reliable GIS objects</h2>
+<div class="academic-objectives">
+<div><span>Objective 01</span><p><strong>Develop an object-level quality-control framework.</strong> Convert UAV-derived segmentation outputs into candidate GIS objects and evaluate their reliability using multidomain predictors.</p></div>
+<div><span>Objective 02</span><p><strong>Assess geographic transferability.</strong> Train the quality-screening models on multiple study sites and evaluate them on a geographically independent test area.</p></div>
+</div>
+</section></div></details><details class="research-detail-disclosure"><summary>Methods, dataset and evidence</summary><div class="research-detail-disclosure-content"><section class="academic-section" id="methods">
+<p class="academic-section-label">3. Data and methods</p>
+<h2>Integrated deep-learning, vector-GIS, and machine-learning workflow</h2>
+<div class="academic-table-wrap">
+<table class="academic-table ongoing-research-table">
+<thead><tr><th>Research component</th><th>Implemented approach</th></tr></thead>
+<tbody>
+<tr><td>UAV data</td><td>Five high-resolution RGB orthophoto sites with approximately 15 cm spatial resolution.</td></tr>
+<tr><td>Segmentation models</td><td>U-Net with a ResNet-34 backbone and SAM-LoRA with a ViT-B backbone.</td></tr>
+<tr><td>Vector preparation</td><td>Mask-to-polygon conversion, geometric regularization, geometry cleaning, manual quality labelling, and spatially exclusive candidate consolidation.</td></tr>
+<tr><td>Object descriptors</td><td>Twenty-four predictors comprising 12 geometric, 6 contextual, and 6 raster-derived variables.</td></tr>
+<tr><td>Quality-screening models</td><td>Comparative evaluation of Decision Tree, Random Trees, and XGBoost classifiers.</td></tr>
+<tr><td>Transferability design</td><td>Sites B–D used for training and Site E reserved as a geographically independent test site.</td></tr>
+<tr><td>Evaluation</td><td>Accuracy, precision, recall, specificity, F1-score, balanced accuracy, MCC, Cohen’s κ, and database-level quality indicators.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="academic-authorship-box"><p><strong>Methodological emphasis.</strong> The workflow evaluates segmentation products after vectorization, allowing model performance to be interpreted in terms of usable geospatial objects and database quality rather than only pixel agreement.</p></div>
+</section><section class="academic-section" id="dataset">
+<p class="academic-section-label">4. Experimental dataset and validation</p>
+<h2>Independent-site assessment of spatial transferability</h2>
+<p>The final modelling dataset contained 12,860 candidate footprints. A total of 8,698 candidates from Sites B–D were used for model development, while 4,162 candidates from Site E were retained for independent geographic testing. This design evaluates whether the learned quality patterns transfer beyond the locations used during model training.</p>
+<div class="academic-table-wrap">
+<table class="academic-table academic-results-table">
+<thead><tr><th>Dataset component</th><th>Role</th><th>Candidate footprints</th></tr></thead>
+<tbody>
+<tr><td>Sites B–D</td><td>Model training and development</td><td>8,698</td></tr>
+<tr><td>Site E</td><td>Independent geographic testing</td><td>4,162</td></tr>
+<tr><td>Total</td><td>Object-level quality-control dataset</td><td>12,860</td></tr>
+</tbody>
+</table>
+</div>
+</section><section class="academic-section" id="results">
+<p class="academic-section-label">5. Selected research findings</p>
+<h2>Improved screening and database-level quality</h2>
+<p>The strongest reported configuration demonstrated that object-level machine-learning screening can substantially improve the reliability of retained building-footprint records. The evaluation combined conventional classification measures with database-oriented indicators that describe the quality of the footprints remaining after screening.</p>
+<div class="academic-table-wrap">
+<table class="academic-table academic-results-table">
+<thead><tr><th>Reported indicator</th><th>Result</th><th>Interpretation</th></tr></thead>
+<tbody>
+<tr><td>Accuracy</td><td>95.31%</td><td>High independent-site classification performance.</td></tr>
+<tr><td>F1-score</td><td>91.06%</td><td>Strong balance between precision and recall for erroneous-candidate screening.</td></tr>
+<tr><td>Matthews correlation coefficient</td><td>0.880</td><td>Strong agreement across the two quality classes.</td></tr>
+<tr><td>Retained error rate</td><td>27.32% → 4.62%</td><td>Substantial reduction in erroneous footprints remaining in the screened database.</td></tr>
+<tr><td>Database purity</td><td>72.68% → 95.38%</td><td>Marked improvement in the proportion of acceptable retained footprints.</td></tr>
+<tr><td>Relative error reduction</td><td>83.09%</td><td>Large reduction in database error relative to the unscreened candidate set.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="academic-authorship-box"><p><strong>Interpretation note.</strong> These results describe the strongest reported screening configuration within the completed research workflow. They should be interpreted together with the independent-site design, class distribution, and object-selection procedure.</p></div>
+</section></div></details><details class="research-detail-disclosure"><summary>Contribution and applications</summary><div class="research-detail-disclosure-content"><section class="academic-section" id="contribution">
+<p class="academic-section-label">6. Research contribution</p>
+<h2>Methodological and practical value</h2>
+<ul class="academic-limitations"><li>Object-level quality-control framework design</li><li>UAV imagery and segmentation-output preparation</li><li>Vectorization, regularization and candidate consolidation</li><li>Geometric, contextual and raster feature engineering</li><li>Machine-learning screening and independent-site validation</li><li>Result interpretation and first-author manuscript preparation</li></ul>
+</section><section class="academic-section" id="applications">
+<p class="academic-section-label">7. Potential applications</p>
+<h2>Where the framework can support practice</h2>
+<ul class="academic-limitations"><li>Building-database quality assurance</li><li>Urban and settlement mapping</li><li>Infrastructure and utility inventories</li><li>Disaster-exposure assessment</li><li>Human-in-the-loop review of AI-derived vectors</li></ul>
+</section><section class="academic-section" id="role">
+<p class="academic-section-label">8. My contribution</p>
+<h2>Research responsibilities</h2>
+<ul class="academic-limitations">
+<li>Research conceptualization and methodological design</li>
+<li>UAV-imagery preparation and building-footprint processing</li>
+<li>Deep-learning output preparation and vector regularization</li>
+<li>Quality-labelling strategy and spatially exclusive data consolidation</li>
+<li>Geometric, contextual, and raster-derived feature development</li>
+<li>Machine-learning model development and independent-site evaluation</li>
+<li>Database-level quality assessment and result interpretation</li>
+<li>Scientific visualization and first-author manuscript preparation</li>
+</ul>
+</section></div></details><a class="research-detail-back-link" href="research.html">← Back to Research</a></div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/site-data.js?v=20260805-v35"></script>
+<script src="assets/js/site.js?v=20260805-v40"></script>
+</body>
+</html>

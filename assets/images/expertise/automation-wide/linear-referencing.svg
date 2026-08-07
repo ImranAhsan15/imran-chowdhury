@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+<title id="t">Linear referencing and nearest connector workflow</title><desc id="d">Points are measured along a route and connected to the nearest point on the line.</desc>
+<rect width="900" height="560" fill="#f5f7fa"/><rect x="28" y="28" width="844" height="504" rx="24" fill="#fff" stroke="#d9e1ea" stroke-width="2"/>
+<path d="M88 382C182 286 216 330 302 236S486 102 584 194s138 90 226-18" fill="none" stroke="#355879" stroke-width="16" stroke-linecap="round"/>
+<path d="M88 382C182 286 216 330 302 236S486 102 584 194s138 90 226-18" fill="none" stroke="#f8fbfd" stroke-width="4" stroke-dasharray="14 14" stroke-linecap="round"/>
+<g font-family="Arial" font-size="18" fill="#355879" font-weight="700"><text x="82" y="422">0+000</text><text x="272" y="278">0+250</text><text x="535" y="236">0+500</text><text x="748" y="158">0+750</text></g>
+<g><circle cx="190" cy="122" r="13" fill="#6f8da9"/><circle cx="410" cy="382" r="13" fill="#6f8da9"/><circle cx="688" cy="370" r="13" fill="#6f8da9"/>
+<path d="M190 122L217 300M410 382L393 151M688 370L648 218" stroke="#7f98b1" stroke-width="5" stroke-dasharray="10 8"/>
+<circle cx="217" cy="300" r="8" fill="#355879"/><circle cx="393" cy="151" r="8" fill="#355879"/><circle cx="648" cy="218" r="8" fill="#355879"/>
+</g>
+<rect x="624" y="396" width="184" height="82" rx="14" fill="#eef3f8" stroke="#ccd8e5"/><text x="648" y="430" font-family="Arial" font-size="16" fill="#667f98">NEAREST OFFSET</text><text x="648" y="458" font-family="Arial" font-size="24" font-weight="700" fill="#355879">route measure</text>
+</svg>

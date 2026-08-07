@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500">
+  <rect width="640" height="500" fill="#0b202a"/>
+  <g transform="translate(48 95)">
+    <path d="M0 30 145 0l96 54 130-34 125 38v135l-107-19-118 43-117-29L0 220Z" fill="#276f67"/>
+    <path d="M0 220 154 188l117 29 118-43 107 19v144l-122-14-97 39-137-31L0 358Z" fill="#927442"/>
+    <path d="M145 0 241 54 190 123 85 114Z" fill="#5dbb79"/><path d="M371 20 496 58v135l-107-19-51-69Z" fill="#4c9f75"/>
+    <path d="M0 220 154 188l36 75-62 68L0 358Z" fill="#3c7f9c"/><path d="M277 362 374 323l122 14v21l-219 5Z" fill="#b58f55"/>
+    <g fill="none" stroke="#dffaf4" stroke-opacity=".4"><path d="M145 0 154 188M241 54l36 308M371 20l3 303"/></g>
+  </g>
+  <text x="40" y="54" fill="#e8fbf7" font-family="Arial,sans-serif" font-size="24" font-weight="800">LAND-COVER CHANGE MODELING</text>
+  <text x="46" y="465" fill="#b8d9d8" font-family="Arial,sans-serif" font-size="15">Remote sensing · CA–ANN · ecosystem valuation</text>
+</svg>

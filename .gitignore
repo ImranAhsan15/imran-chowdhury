@@ -1,0 +1,18 @@
+# OS/editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local temporary/backup files
+*.tmp
+*.bak
+*.log
+~$*
+
+# Python cache (if local helper scripts are run)
+__pycache__/
+*.py[cod]

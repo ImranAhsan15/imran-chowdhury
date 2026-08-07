@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Geometry and linear-referencing utilities">
+<rect width="1200" height="360" fill="#f7f9fb"/><rect x="16" y="16" width="1168" height="328" rx="18" fill="#ffffff" stroke="#d7e0e8"/>
+<text x="52" y="64" font-family="Arial, sans-serif" font-size="18" letter-spacing="2" fill="#60798f">AUTOMATION WORKFLOW</text>
+<text x="52" y="103" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#19384f">Geometry and linear-referencing utilities</text>
+<path d="M72 208l43-64 42 38 41-54" fill="none" stroke="#244a68" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="72" cy="208" r="7" fill="#244a68"/><circle cx="115" cy="144" r="7" fill="#244a68"/><circle cx="157" cy="182" r="7" fill="#244a68"/><circle cx="198" cy="128" r="7" fill="#244a68"/>
+<rect x="260" y="137" width="245" height="92" rx="12" fill="#f2f6f9" stroke="#d7e0e8"/><text x="282" y="170" font-family="Arial" font-size="14" font-weight="700" fill="#60798f">INPUT / PROBLEM</text><text x="282" y="199" font-family="Arial" font-size="18" fill="#19384f">Points + lines</text>
+<path d="M518 183h67" stroke="#8ca3b6" stroke-width="4"/><path d="M574 172l13 11-13 11" fill="none" stroke="#8ca3b6" stroke-width="4"/>
+<rect x="600" y="137" width="245" height="92" rx="12" fill="#edf3f8" stroke="#bfcdda"/><text x="622" y="170" font-family="Arial" font-size="14" font-weight="700" fill="#60798f">PYTHON / ARCPY</text><text x="622" y="199" font-family="Arial" font-size="18" fill="#19384f">Measure and construct</text>
+<path d="M858 183h67" stroke="#8ca3b6" stroke-width="4"/><path d="M914 172l13 11-13 11" fill="none" stroke="#8ca3b6" stroke-width="4"/>
+<rect x="940" y="137" width="210" height="92" rx="12" fill="#f2f6f9" stroke="#d7e0e8"/><text x="962" y="170" font-family="Arial" font-size="14" font-weight="700" fill="#60798f">OUTPUT</text><text x="962" y="199" font-family="Arial" font-size="18" fill="#19384f">Derived geometry</text>
+<text x="52" y="302" font-family="Arial" font-size="15" fill="#60798f">Public-safe conceptual visualization based on the supplied Python workflow archive.</text></svg>
